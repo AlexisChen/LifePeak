@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+target 'renshenglogin' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for renshenglogin
+
+	pod 'Firebase/Core'
+	pod 'Firebase/Database'
+	
+	#add firebaseUI to the app
+	pod 'FirebaseUI/Auth'
+	pod 'FirebaseUI/Google'
+	pod 'FirebaseUI/Facebook'
+	pod 'FirebaseUI/Phone'
+
+	#enable facebook login
+	pod 'FBSDKLoginKit'
+
+end

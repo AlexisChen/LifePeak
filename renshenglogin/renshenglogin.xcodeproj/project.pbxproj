@@ -16,6 +16,10 @@
 		434C0F12201CF5ED00697E01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434C0F11201CF5ED00697E01 /* Assets.xcassets */; };
 		434C0F15201CF5ED00697E01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434C0F13201CF5ED00697E01 /* LaunchScreen.storyboard */; };
 		434C0F1F201D053600697E01 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C0F1E201D053600697E01 /* RegisterViewController.swift */; };
+		4359E16F206216BC009E20A0 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E16E206216BC009E20A0 /* UserListViewController.swift */; };
+		4359E17120621833009E20A0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17020621833009E20A0 /* CollectionViewController.swift */; };
+		4359E17320621843009E20A0 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17220621843009E20A0 /* MessageViewController.swift */; };
+		4359E17520621FBD009E20A0 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17420621FBD009E20A0 /* FollowingViewController.swift */; };
 		43A41AD3201D9CC60040DDE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */; };
 		F8E760D057CD884BC607C301 /* Pods_renshenglogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E711BF8A9D0CBB1A077090 /* Pods_renshenglogin.framework */; };
 /* End PBXBuildFile section */
@@ -32,6 +36,10 @@
 		434C0F14201CF5ED00697E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		434C0F16201CF5ED00697E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		434C0F1E201D053600697E01 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4359E16E206216BC009E20A0 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		4359E17020621833009E20A0 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		4359E17220621843009E20A0 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		4359E17420621FBD009E20A0 /* FollowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
 		43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		43CFC3722059D36B00BB5E7F /* renshenglogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = renshenglogin.entitlements; sourceTree = "<group>"; };
 		5C3B35C6A50D6C8CE4CF968B /* Pods-renshenglogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-renshenglogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-renshenglogin/Pods-renshenglogin.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +92,10 @@
 				433E7FDC2030B191009B65A3 /* GoogleService-Info.plist */,
 				433E7FDE2030BF19009B65A3 /* SettingsViewController.swift */,
 				433E7FE02030C9CE009B65A3 /* HomeViewController.swift */,
+				4359E16E206216BC009E20A0 /* UserListViewController.swift */,
+				4359E17020621833009E20A0 /* CollectionViewController.swift */,
+				4359E17220621843009E20A0 /* MessageViewController.swift */,
+				4359E17420621FBD009E20A0 /* FollowingViewController.swift */,
 			);
 			path = renshenglogin;
 			sourceTree = "<group>";
@@ -265,9 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4359E16F206216BC009E20A0 /* UserListViewController.swift in Sources */,
+				4359E17320621843009E20A0 /* MessageViewController.swift in Sources */,
 				43A41AD3201D9CC60040DDE7 /* LoginViewController.swift in Sources */,
 				434C0F1F201D053600697E01 /* RegisterViewController.swift in Sources */,
 				434C0F0D201CF5ED00697E01 /* ViewController.swift in Sources */,
+				4359E17120621833009E20A0 /* CollectionViewController.swift in Sources */,
+				4359E17520621FBD009E20A0 /* FollowingViewController.swift in Sources */,
 				433E7FDF2030BF19009B65A3 /* SettingsViewController.swift in Sources */,
 				434C0F0B201CF5ED00697E01 /* AppDelegate.swift in Sources */,
 				433E7FE12030C9CE009B65A3 /* HomeViewController.swift in Sources */,

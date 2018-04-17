@@ -27,7 +27,6 @@ class RegisterViewController: UIViewController {
     }
     
 
-
     @IBAction func registerButtonTapped(sender: Any) {
         let userEmail = userEmailTextField.text;
         let userPassword = userPasswordTextField.text;

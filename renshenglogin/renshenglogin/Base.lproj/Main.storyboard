@@ -15,7 +15,7 @@
         <scene sceneID="nNO-MN-PII">
             <objects>
                 <collectionViewController id="XoR-j4-XZN" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="F32-Ef-clg">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" springLoaded="YES" id="F32-Ef-clg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -70,7 +70,7 @@
             </objects>
             <point key="canvasLocation" x="-652" y="1272"/>
         </scene>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="XNW-fQ-U3R">
             <objects>
                 <viewController id="6gz-u4-qqs" sceneMemberID="viewController">
@@ -80,13 +80,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Lna-DQ-k7J"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="aqg-Ha-tEP"/>
+                    <tabBarItem key="tabBarItem" title="" image="newpost_btn" id="33g-pe-nCp"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQi-fr-55E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="449" y="3405"/>
+            <point key="canvasLocation" x="2574" y="3078"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
         <scene sceneID="fLl-GC-oIc">
             <objects>
                 <viewController id="w3R-NO-d2n" sceneMemberID="viewController">
@@ -94,9 +95,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="SKH-j7-lxD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="YbN-pz-JIA"/>
+                    <tabBarItem key="tabBarItem" title="" image="Explore_btn" id="VBH-K2-9kv"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BqJ-pt-p66" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,10 +114,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="w3R-NO-d2n" kind="relationship" relationship="viewControllers" id="cuZ-OL-YtY"/>
                         <segue destination="6gz-u4-qqs" kind="relationship" relationship="viewControllers" id="Wto-dt-Ul4"/>
+                        <segue destination="qDt-zu-PIM" kind="relationship" relationship="viewControllers" id="QB0-Ec-cQv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHg-QV-ZVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -267,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7u-R5-qNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4689" y="3743"/>
+            <point key="canvasLocation" x="4689" y="3756"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Yca-hW-SZ0">
@@ -394,10 +399,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mfr-va-Vqz"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="Homepage_btn" selectedImage="Homepage_btn" id="tMx-cS-2oF"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFH-1d-brp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2109.5999999999999" y="2327.5862068965521"/>
+            <point key="canvasLocation" x="2574" y="1778"/>
         </scene>
         <!--Following View Controller-->
         <scene sceneID="JWt-6G-0wV">
@@ -429,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mbg-hv-dwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4688.8000000000002" y="2945.577211394303"/>
+            <point key="canvasLocation" x="4689" y="4572"/>
         </scene>
         <!--Follower View Controller-->
         <scene sceneID="nuA-iZ-I3z">
@@ -461,7 +468,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NJk-rw-Mgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4689" y="4466"/>
+            <point key="canvasLocation" x="4689" y="2973"/>
         </scene>
         <!--Collections View Controller-->
         <scene sceneID="nHB-j2-HUe">
@@ -700,7 +707,10 @@
     </scenes>
     <resources>
         <image name="Blush" width="107" height="94"/>
+        <image name="Explore_btn" width="24" height="25"/>
+        <image name="Homepage_btn" width="26" height="29"/>
         <image name="Logo" width="1920" height="1080"/>
         <image name="Setting_btn" width="455" height="455"/>
+        <image name="newpost_btn" width="107" height="94"/>
     </resources>
 </document>

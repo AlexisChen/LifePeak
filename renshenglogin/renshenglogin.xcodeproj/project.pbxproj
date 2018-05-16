@@ -7,25 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		433E7FDD2030B191009B65A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 433E7FDC2030B191009B65A3 /* GoogleService-Info.plist */; };
 		433E7FDF2030BF19009B65A3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433E7FDE2030BF19009B65A3 /* SettingsViewController.swift */; };
 		433E7FE12030C9CE009B65A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433E7FE02030C9CE009B65A3 /* HomeViewController.swift */; };
 		434C0F0B201CF5ED00697E01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C0F0A201CF5ED00697E01 /* AppDelegate.swift */; };
 		434C0F0D201CF5ED00697E01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C0F0C201CF5ED00697E01 /* ViewController.swift */; };
 		434C0F10201CF5ED00697E01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434C0F0E201CF5ED00697E01 /* Main.storyboard */; };
 		434C0F12201CF5ED00697E01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434C0F11201CF5ED00697E01 /* Assets.xcassets */; };
-		434C0F15201CF5ED00697E01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434C0F13201CF5ED00697E01 /* LaunchScreen.storyboard */; };
 		434C0F1F201D053600697E01 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C0F1E201D053600697E01 /* RegisterViewController.swift */; };
 		4359E16F206216BC009E20A0 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E16E206216BC009E20A0 /* UserListViewController.swift */; };
 		4359E17120621833009E20A0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17020621833009E20A0 /* CollectionViewController.swift */; };
-		4359E17320621843009E20A0 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17220621843009E20A0 /* MessageViewController.swift */; };
+		4359E17320621843009E20A0 /* MessageViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17220621843009E20A0 /* MessageViewController1.swift */; };
 		4359E17520621FBD009E20A0 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17420621FBD009E20A0 /* FollowingViewController.swift */; };
 		43A41AD3201D9CC60040DDE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */; };
+		5A13B40120A9482C00AD2D28 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5A13B40020A9482C00AD2D28 /* Podfile */; };
+		5A13B40320A9512500AD2D28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A13B40220A9512400AD2D28 /* GoogleService-Info.plist */; };
+		5A13B40720A9634800AD2D28 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13B40620A9634800AD2D28 /* ChatViewController.swift */; };
+		5AE93ECA20AA3C37007E8178 /* Messagestruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE93EC920AA3C37007E8178 /* Messagestruct.swift */; };
 		F8E760D057CD884BC607C301 /* Pods_renshenglogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E711BF8A9D0CBB1A077090 /* Pods_renshenglogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		433E7FDC2030B191009B65A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		433E7FDE2030BF19009B65A3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		433E7FE02030C9CE009B65A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		434C0F07201CF5ED00697E01 /* renshenglogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = renshenglogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,15 +34,18 @@
 		434C0F0C201CF5ED00697E01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		434C0F0F201CF5ED00697E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		434C0F11201CF5ED00697E01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		434C0F14201CF5ED00697E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		434C0F16201CF5ED00697E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		434C0F1E201D053600697E01 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4359E16E206216BC009E20A0 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		4359E17020621833009E20A0 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		4359E17220621843009E20A0 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		4359E17220621843009E20A0 /* MessageViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController1.swift; sourceTree = "<group>"; };
 		4359E17420621FBD009E20A0 /* FollowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
 		43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		43CFC3722059D36B00BB5E7F /* renshenglogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = renshenglogin.entitlements; sourceTree = "<group>"; };
+		5A13B40020A9482C00AD2D28 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		5A13B40220A9512400AD2D28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A13B40620A9634800AD2D28 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		5AE93EC920AA3C37007E8178 /* Messagestruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messagestruct.swift; sourceTree = "<group>"; };
 		5C3B35C6A50D6C8CE4CF968B /* Pods-renshenglogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-renshenglogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-renshenglogin/Pods-renshenglogin.release.xcconfig"; sourceTree = "<group>"; };
 		E0E711BF8A9D0CBB1A077090 /* Pods_renshenglogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_renshenglogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E92F347D3C18779EF7F809 /* Pods-renshenglogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-renshenglogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-renshenglogin/Pods-renshenglogin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,16 +90,18 @@
 				434C0F0C201CF5ED00697E01 /* ViewController.swift */,
 				434C0F0E201CF5ED00697E01 /* Main.storyboard */,
 				434C0F11201CF5ED00697E01 /* Assets.xcassets */,
-				434C0F13201CF5ED00697E01 /* LaunchScreen.storyboard */,
 				434C0F16201CF5ED00697E01 /* Info.plist */,
 				43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */,
-				433E7FDC2030B191009B65A3 /* GoogleService-Info.plist */,
+				5A13B40220A9512400AD2D28 /* GoogleService-Info.plist */,
 				433E7FDE2030BF19009B65A3 /* SettingsViewController.swift */,
 				433E7FE02030C9CE009B65A3 /* HomeViewController.swift */,
 				4359E16E206216BC009E20A0 /* UserListViewController.swift */,
 				4359E17020621833009E20A0 /* CollectionViewController.swift */,
-				4359E17220621843009E20A0 /* MessageViewController.swift */,
+				4359E17220621843009E20A0 /* MessageViewController1.swift */,
 				4359E17420621FBD009E20A0 /* FollowingViewController.swift */,
+				5A13B40020A9482C00AD2D28 /* Podfile */,
+				5A13B40620A9634800AD2D28 /* ChatViewController.swift */,
+				5AE93EC920AA3C37007E8178 /* Messagestruct.swift */,
 			);
 			path = renshenglogin;
 			sourceTree = "<group>";
@@ -184,9 +190,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				434C0F15201CF5ED00697E01 /* LaunchScreen.storyboard in Resources */,
-				433E7FDD2030B191009B65A3 /* GoogleService-Info.plist in Resources */,
 				434C0F12201CF5ED00697E01 /* Assets.xcassets in Resources */,
+				5A13B40320A9512500AD2D28 /* GoogleService-Info.plist in Resources */,
+				5A13B40120A9482C00AD2D28 /* Podfile in Resources */,
 				434C0F10201CF5ED00697E01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +231,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -236,6 +243,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -278,15 +286,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4359E16F206216BC009E20A0 /* UserListViewController.swift in Sources */,
-				4359E17320621843009E20A0 /* MessageViewController.swift in Sources */,
+				4359E17320621843009E20A0 /* MessageViewController1.swift in Sources */,
 				43A41AD3201D9CC60040DDE7 /* LoginViewController.swift in Sources */,
 				434C0F1F201D053600697E01 /* RegisterViewController.swift in Sources */,
 				434C0F0D201CF5ED00697E01 /* ViewController.swift in Sources */,
 				4359E17120621833009E20A0 /* CollectionViewController.swift in Sources */,
 				4359E17520621FBD009E20A0 /* FollowingViewController.swift in Sources */,
 				433E7FDF2030BF19009B65A3 /* SettingsViewController.swift in Sources */,
+				5AE93ECA20AA3C37007E8178 /* Messagestruct.swift in Sources */,
 				434C0F0B201CF5ED00697E01 /* AppDelegate.swift in Sources */,
 				433E7FE12030C9CE009B65A3 /* HomeViewController.swift in Sources */,
+				5A13B40720A9634800AD2D28 /* ChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +309,6 @@
 				434C0F0F201CF5ED00697E01 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		434C0F13201CF5ED00697E01 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				434C0F14201CF5ED00697E01 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -424,6 +426,7 @@
 			baseConfigurationReference = E0E92F347D3C18779EF7F809 /* Pods-renshenglogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = renshenglogin/renshenglogin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8P4A44Q66X;
@@ -432,7 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.renshenglogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -441,6 +444,7 @@
 			baseConfigurationReference = 5C3B35C6A50D6C8CE4CF968B /* Pods-renshenglogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = renshenglogin/renshenglogin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8P4A44Q66X;
@@ -449,7 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.renshenglogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

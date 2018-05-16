@@ -16,18 +16,19 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     
-    override func viewDidAppear(_ animated: Bool) {
+    /*override func viewDidAppear(_ animated: Bool) {
         let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn");
         if(!isUserLoggedIn){
             self.dismiss(animated: true, completion: nil);
         }
-    }
+    }*/
     
     @IBAction func backToFeedTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil);

@@ -15,6 +15,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var userPasswordTextField: UITextField!
     @IBOutlet weak var userRepeatPasswordTextField: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -72,6 +73,14 @@ class RegisterViewController: UIViewController {
         confirmAlert.addAction(okAction);
         self.present(confirmAlert, animated: true, completion: nil);
     }
+    
+    
+    @IBAction func Clear(_ sender: Any) {
+        userEmailTextField.text = "";
+        userPasswordTextField.text = "";
+        userRepeatPasswordTextField.text = "";
+    }
+
     
     func displayAlertMessage(usermessage: String)
     {

@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
 
 class RegisterViewController: UIViewController {
 
@@ -48,15 +49,42 @@ class RegisterViewController: UIViewController {
         //store data
         Auth.auth().createUser(withEmail: userEmail!, password: userPassword!, completion: {(user, error) in
             if (user != nil){
-                //signed up successful
-            }else{
-                if let myError = error?.localizedDescription{
-                    self.displayAlertMessage(usermessage: myError);
+                let confirmAlert = UIAlertController(title: "Thanks!",  message: "Registration is successful!",  preferredStyle: UIAlertControllerStyle.alert);
+                let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default){action in
+                    self.dismiss(animated: true, completion: nil);
+                }
+                confirmAlert.addAction(okAction);
+                self.present(confirmAlert, animated: true, completion: nil);
+
+            }
+            
+            else{
+                if let error = error{
+                    switch AuthErrorCode(rawValue: error._code){
+                    case .emailAlreadyInUse?:
+                        self.displayAlertMessage(usermessage: "Email is already in use")
+                        print("in use")
+                        break
+                    case .invalidEmail?:
+                        self.displayAlertMessage(usermessage: "Email format is invalid")
+                        break
+                    case .networkError?:
+                        self.displayAlertMessage(usermessage: "Network error pls try again")
+                        break
+                  
+                        
+                    default:
+                       
+                        break
+                      
+                    }
+                   // self.displayAlertMessage(usermessage: myError);
                 }else{
-                    self.displayAlertMessage(usermessage: "This account haven't registered, please register first");
+                    //self.displayAlertMessage(usermessage: "This account haven't registered, please register first");
                 }
             }
-        })
+        }
+        )
         
         /*
          //using local storage
@@ -66,12 +94,8 @@ class RegisterViewController: UIViewController {
         defaults.synchronize();
         */
         //display alert message with confirmation
-        let confirmAlert = UIAlertController(title: "Thanks!",  message: "Registration is successful!",  preferredStyle: UIAlertControllerStyle.alert);
-        let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default){action in
-            self.dismiss(animated: true, completion: nil);
-        }
-        confirmAlert.addAction(okAction);
-        self.present(confirmAlert, animated: true, completion: nil);
+
+       
     }
     
     

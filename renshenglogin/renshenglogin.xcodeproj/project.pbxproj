@@ -19,8 +19,8 @@
 		4359E17320621843009E20A0 /* MessageViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17220621843009E20A0 /* MessageViewController1.swift */; };
 		4359E17520621FBD009E20A0 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17420621FBD009E20A0 /* FollowingViewController.swift */; };
 		43A41AD3201D9CC60040DDE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */; };
+		4BBA004920BB2595003FC6F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BBA004820BB2594003FC6F3 /* GoogleService-Info.plist */; };
 		5A13B40120A9482C00AD2D28 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5A13B40020A9482C00AD2D28 /* Podfile */; };
-		5A13B40320A9512500AD2D28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A13B40220A9512400AD2D28 /* GoogleService-Info.plist */; };
 		5A13B40720A9634800AD2D28 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13B40620A9634800AD2D28 /* ChatViewController.swift */; };
 		5AE93ECA20AA3C37007E8178 /* Messagestruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE93EC920AA3C37007E8178 /* Messagestruct.swift */; };
 		F8E760D057CD884BC607C301 /* Pods_renshenglogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E711BF8A9D0CBB1A077090 /* Pods_renshenglogin.framework */; };
@@ -42,8 +42,8 @@
 		4359E17420621FBD009E20A0 /* FollowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
 		43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		43CFC3722059D36B00BB5E7F /* renshenglogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = renshenglogin.entitlements; sourceTree = "<group>"; };
+		4BBA004820BB2594003FC6F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A13B40020A9482C00AD2D28 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		5A13B40220A9512400AD2D28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A13B40620A9634800AD2D28 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5AE93EC920AA3C37007E8178 /* Messagestruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messagestruct.swift; sourceTree = "<group>"; };
 		5C3B35C6A50D6C8CE4CF968B /* Pods-renshenglogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-renshenglogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-renshenglogin/Pods-renshenglogin.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				434C0F11201CF5ED00697E01 /* Assets.xcassets */,
 				434C0F16201CF5ED00697E01 /* Info.plist */,
 				43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */,
-				5A13B40220A9512400AD2D28 /* GoogleService-Info.plist */,
+				4BBA004820BB2594003FC6F3 /* GoogleService-Info.plist */,
 				433E7FDE2030BF19009B65A3 /* SettingsViewController.swift */,
 				433E7FE02030C9CE009B65A3 /* HomeViewController.swift */,
 				4359E16E206216BC009E20A0 /* UserListViewController.swift */,
@@ -191,7 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				434C0F12201CF5ED00697E01 /* Assets.xcassets in Resources */,
-				5A13B40320A9512500AD2D28 /* GoogleService-Info.plist in Resources */,
+				4BBA004920BB2595003FC6F3 /* GoogleService-Info.plist in Resources */,
 				5A13B40120A9482C00AD2D28 /* Podfile in Resources */,
 				434C0F10201CF5ED00697E01 /* Main.storyboard in Resources */,
 			);

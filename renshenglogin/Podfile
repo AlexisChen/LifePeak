@@ -18,6 +18,6 @@ target 'renshenglogin' do
     pod 'MessageKit'
 
 	#enable facebook login
-	pod 'FBSDKLoginKit'
+    pod 'FBSDKLoginKit'
 
 end

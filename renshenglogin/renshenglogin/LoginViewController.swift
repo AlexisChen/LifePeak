@@ -33,7 +33,8 @@ class LoginViewController: UIViewController {
             displayAlertMessage(usermessage: "UserEmail and UserPassword cannot be empty");
         }
         //when both fields are filled
-        Auth.auth().signIn(withEmail: userEmail!, password: userPassword!, completion: {(user, error) in
+        Auth.auth().signIn(withEmail: userEmail!, password: userPassword!, completion: {
+            (user, error) in
             if(user != nil){
                 //sign in successful
                 

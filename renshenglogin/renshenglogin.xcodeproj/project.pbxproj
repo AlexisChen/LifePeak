@@ -19,8 +19,9 @@
 		4359E17320621843009E20A0 /* MessageViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17220621843009E20A0 /* MessageViewController1.swift */; };
 		4359E17520621FBD009E20A0 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17420621FBD009E20A0 /* FollowingViewController.swift */; };
 		43A41AD3201D9CC60040DDE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */; };
+		4B0BA83820E244C60035C6F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B0BA83720E244C60035C6F3 /* GoogleService-Info.plist */; };
 		4B26F2AF20D528B20052BFC7 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B26F2AE20D528B20052BFC7 /* NewPostViewController.swift */; };
-		4BBA004920BB2595003FC6F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BBA004820BB2594003FC6F3 /* GoogleService-Info.plist */; };
+		4BDFADB720E4BFDB002B55D1 /* SelectPictureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDFADB620E4BFDB002B55D1 /* SelectPictureHandler.swift */; };
 		5A13B40120A9482C00AD2D28 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5A13B40020A9482C00AD2D28 /* Podfile */; };
 		5A13B40720A9634800AD2D28 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13B40620A9634800AD2D28 /* ChatViewController.swift */; };
 		5AE93ECA20AA3C37007E8178 /* Messagestruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE93EC920AA3C37007E8178 /* Messagestruct.swift */; };
@@ -43,8 +44,9 @@
 		4359E17420621FBD009E20A0 /* FollowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
 		43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		43CFC3722059D36B00BB5E7F /* renshenglogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = renshenglogin.entitlements; sourceTree = "<group>"; };
+		4B0BA83720E244C60035C6F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4B26F2AE20D528B20052BFC7 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
-		4BBA004820BB2594003FC6F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4BDFADB620E4BFDB002B55D1 /* SelectPictureHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPictureHandler.swift; sourceTree = "<group>"; };
 		5A13B40020A9482C00AD2D28 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		5A13B40620A9634800AD2D28 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5AE93EC920AA3C37007E8178 /* Messagestruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messagestruct.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		434C0F09201CF5ED00697E01 /* renshenglogin */ = {
 			isa = PBXGroup;
 			children = (
+				4B0BA83720E244C60035C6F3 /* GoogleService-Info.plist */,
 				43CFC3722059D36B00BB5E7F /* renshenglogin.entitlements */,
 				434C0F1E201D053600697E01 /* RegisterViewController.swift */,
 				434C0F0A201CF5ED00697E01 /* AppDelegate.swift */,
@@ -94,7 +97,6 @@
 				434C0F11201CF5ED00697E01 /* Assets.xcassets */,
 				434C0F16201CF5ED00697E01 /* Info.plist */,
 				43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */,
-				4BBA004820BB2594003FC6F3 /* GoogleService-Info.plist */,
 				433E7FDE2030BF19009B65A3 /* SettingsViewController.swift */,
 				433E7FE02030C9CE009B65A3 /* HomeViewController.swift */,
 				4359E16E206216BC009E20A0 /* UserListViewController.swift */,
@@ -105,6 +107,7 @@
 				5A13B40620A9634800AD2D28 /* ChatViewController.swift */,
 				5AE93EC920AA3C37007E8178 /* Messagestruct.swift */,
 				4B26F2AE20D528B20052BFC7 /* NewPostViewController.swift */,
+				4BDFADB620E4BFDB002B55D1 /* SelectPictureHandler.swift */,
 			);
 			path = renshenglogin;
 			sourceTree = "<group>";
@@ -194,7 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				434C0F12201CF5ED00697E01 /* Assets.xcassets in Resources */,
-				4BBA004920BB2595003FC6F3 /* GoogleService-Info.plist in Resources */,
+				4B0BA83820E244C60035C6F3 /* GoogleService-Info.plist in Resources */,
 				5A13B40120A9482C00AD2D28 /* Podfile in Resources */,
 				434C0F10201CF5ED00697E01 /* Main.storyboard in Resources */,
 			);
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4359E16F206216BC009E20A0 /* UserListViewController.swift in Sources */,
+				4BDFADB720E4BFDB002B55D1 /* SelectPictureHandler.swift in Sources */,
 				4B26F2AF20D528B20052BFC7 /* NewPostViewController.swift in Sources */,
 				4359E17320621843009E20A0 /* MessageViewController1.swift in Sources */,
 				43A41AD3201D9CC60040DDE7 /* LoginViewController.swift in Sources */,
@@ -430,10 +434,9 @@
 			baseConfigurationReference = E0E92F347D3C18779EF7F809 /* Pods-renshenglogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = renshenglogin/renshenglogin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 78TRN4D6D7;
 				INFOPLIST_FILE = renshenglogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.renshenglogin;
@@ -448,10 +451,9 @@
 			baseConfigurationReference = 5C3B35C6A50D6C8CE4CF968B /* Pods-renshenglogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = renshenglogin/renshenglogin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 78TRN4D6D7;
 				INFOPLIST_FILE = renshenglogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.renshenglogin;

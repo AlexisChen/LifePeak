@@ -1,6 +1,7 @@
-platform :ios, '11.3'
+platform :ios, '11.2'
 
 target 'renshenglogin' do
+project'/Users/cynthiaghf/Desktop/Blush/Code/renshenglogin/renshenglogin.xcodeproj
 use_frameworks!
 
 pod 'Firebase/Core'

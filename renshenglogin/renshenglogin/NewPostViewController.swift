@@ -8,8 +8,18 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class NewPostViewController: UIViewController {
+    
+
+
+    @IBOutlet weak var postImageView: UIImageView!
+    
+    let storageRef = Storage.storage().reference()
+    let uploadData = UIImagePNGRepresentation(postImageView.image!)
+    
+    
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var titleTextField: UITextField!
     
@@ -37,11 +47,16 @@ class NewPostViewController: UIViewController {
                         "description" : description
                     ]
                 Database.database().reference().child("posts").childByAutoId().setValue(postObject)
+                
+                print("Posted to Firebase.")
                 }
             }
         }
         
     }
+    
+    
+    
     
     /*
     // MARK: - Navigation

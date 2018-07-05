@@ -21,7 +21,6 @@
 		43A41AD3201D9CC60040DDE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */; };
 		4B0BA83820E244C60035C6F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B0BA83720E244C60035C6F3 /* GoogleService-Info.plist */; };
 		4B26F2AF20D528B20052BFC7 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B26F2AE20D528B20052BFC7 /* NewPostViewController.swift */; };
-		4BDFADB720E4BFDB002B55D1 /* SelectPictureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDFADB620E4BFDB002B55D1 /* SelectPictureHandler.swift */; };
 		5A13B40120A9482C00AD2D28 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5A13B40020A9482C00AD2D28 /* Podfile */; };
 		5A13B40720A9634800AD2D28 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13B40620A9634800AD2D28 /* ChatViewController.swift */; };
 		5AE93ECA20AA3C37007E8178 /* Messagestruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE93EC920AA3C37007E8178 /* Messagestruct.swift */; };
@@ -46,7 +45,6 @@
 		43CFC3722059D36B00BB5E7F /* renshenglogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = renshenglogin.entitlements; sourceTree = "<group>"; };
 		4B0BA83720E244C60035C6F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4B26F2AE20D528B20052BFC7 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
-		4BDFADB620E4BFDB002B55D1 /* SelectPictureHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPictureHandler.swift; sourceTree = "<group>"; };
 		5A13B40020A9482C00AD2D28 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		5A13B40620A9634800AD2D28 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5AE93EC920AA3C37007E8178 /* Messagestruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messagestruct.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				5A13B40620A9634800AD2D28 /* ChatViewController.swift */,
 				5AE93EC920AA3C37007E8178 /* Messagestruct.swift */,
 				4B26F2AE20D528B20052BFC7 /* NewPostViewController.swift */,
-				4BDFADB620E4BFDB002B55D1 /* SelectPictureHandler.swift */,
 			);
 			path = renshenglogin;
 			sourceTree = "<group>";
@@ -292,7 +289,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4359E16F206216BC009E20A0 /* UserListViewController.swift in Sources */,
-				4BDFADB720E4BFDB002B55D1 /* SelectPictureHandler.swift in Sources */,
 				4B26F2AF20D528B20052BFC7 /* NewPostViewController.swift in Sources */,
 				4359E17320621843009E20A0 /* MessageViewController1.swift in Sources */,
 				43A41AD3201D9CC60040DDE7 /* LoginViewController.swift in Sources */,
@@ -439,7 +435,7 @@
 				DEVELOPMENT_TEAM = 78TRN4D6D7;
 				INFOPLIST_FILE = renshenglogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.renshenglogin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blush.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -456,7 +452,7 @@
 				DEVELOPMENT_TEAM = 78TRN4D6D7;
 				INFOPLIST_FILE = renshenglogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.renshenglogin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blush.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

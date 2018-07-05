@@ -182,6 +182,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNe-UI-uQx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -193,12 +198,13 @@
                         <outlet property="PostImageView" destination="Zx2-d2-ds0" id="YVD-Xb-WRE"/>
                         <outlet property="descriptionTextField" destination="Etw-6D-DGP" id="jcQ-8Q-CO1"/>
                         <outlet property="postImageView" destination="Zx2-d2-ds0" id="m8k-Na-kkh"/>
+                        <outlet property="postMovieView" destination="mNe-UI-uQx" id="H2x-Mh-tc6"/>
                         <outlet property="titleTextField" destination="tee-H2-YgO" id="3jo-jV-LOI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BqJ-pt-p66" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1585" y="800"/>
+            <point key="canvasLocation" x="1584.8" y="799.2503748125938"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Ugz-ew-mM0">

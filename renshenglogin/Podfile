@@ -13,7 +13,7 @@ target 'renshenglogin' do
 	
 	#add firebaseUI to the app
 	pod 'FirebaseUI/Auth'
-	pod 'FirebaseUI/Google'
+	pod 'FirebaseUI/Google' 
 	pod 'FirebaseUI/Facebook'
 	pod 'FirebaseUI/Phone'
     pod 'MessageKit'

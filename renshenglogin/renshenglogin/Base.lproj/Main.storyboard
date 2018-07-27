@@ -72,7 +72,7 @@
             </objects>
             <point key="canvasLocation" x="-652" y="1272"/>
         </scene>
-        <!--Item-->
+        <!--Explore-->
         <scene sceneID="XNW-fQ-U3R">
             <objects>
                 <viewController id="6gz-u4-qqs" sceneMemberID="viewController">
@@ -139,68 +139,26 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Lna-DQ-k7J"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Wia-R0-9bq"/>
+                    <tabBarItem key="tabBarItem" title="Explore" id="Wia-R0-9bq"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQi-fr-55E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1585" y="2846"/>
         </scene>
-        <!--Item-->
+        <!--New post-->
         <scene sceneID="fLl-GC-oIc">
             <objects>
-                <viewController id="w3R-NO-d2n" customClass="NewPostViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="w3R-NO-d2n" customClass="NewPostViewConroller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6GH-VX-aLX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tee-H2-YgO">
-                                <rect key="frame" x="23" y="398" width="97" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Description" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Etw-6D-DGP">
-                                <rect key="frame" x="23" y="430" width="97" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKl-kn-7z2">
-                                <rect key="frame" x="164" y="539" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="postTapped:" destination="w3R-NO-d2n" eventType="touchUpInside" id="IWn-MC-nZ8"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zx2-d2-ds0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNe-UI-uQx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="SKH-j7-lxD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="UEG-aG-QXn"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="New post" id="UEG-aG-QXn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="PostImageView" destination="Zx2-d2-ds0" id="YVD-Xb-WRE"/>
-                        <outlet property="descriptionTextField" destination="Etw-6D-DGP" id="jcQ-8Q-CO1"/>
-                        <outlet property="postImageView" destination="Zx2-d2-ds0" id="m8k-Na-kkh"/>
-                        <outlet property="postMovieView" destination="mNe-UI-uQx" id="H2x-Mh-tc6"/>
-                        <outlet property="titleTextField" destination="tee-H2-YgO" id="3jo-jV-LOI"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BqJ-pt-p66" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -240,10 +198,10 @@
             </objects>
             <point key="canvasLocation" x="3249" y="764"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="W2i-qb-ihg">
             <objects>
-                <tabBarController id="Xfl-V0-efh" sceneMemberID="viewController">
+                <tabBarController id="Xfl-V0-efh" customClass="MainTabBarController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xeu-4c-ZD6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -345,7 +303,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="w3R-NO-d2n" kind="show" id="VUJ-3n-FXm"/>
+                                    <segue destination="Xfl-V0-efh" kind="show" id="6Uy-VC-RsJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -420,7 +378,7 @@
             </objects>
             <point key="canvasLocation" x="4689" y="3711"/>
         </scene>
-        <!--Item-->
+        <!--Homepage-->
         <scene sceneID="Yca-hW-SZ0">
             <objects>
                 <viewController id="qDt-zu-PIM" customClass="HomeViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
@@ -603,7 +561,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mfr-va-Vqz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="lHk-7J-va7"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Homepage" id="lHk-7J-va7"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFH-1d-brp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -946,7 +904,4 @@
         <image name="SignUp" width="180" height="180"/>
         <image name="setting" width="82" height="82"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="VUJ-3n-FXm"/>
-    </inferredMetricsTieBreakers>
 </document>

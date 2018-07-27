@@ -14,7 +14,7 @@ import FirebaseDatabase
 struct NewPostHandler {
     static func create(for image: UIImage) {
         let imageRef = Storage.storage().reference().child("postImage.jpg")
-        UploadtoStorage.uploadImage(_ image: image, at: imageRef) { (downloadURL) in
+        UploadtoStorage.uploadImage(image, at: imageRef) { (downloadURL) in
             guard let downloadURL = downloadURL else {
                 return
             }
@@ -22,3 +22,4 @@ struct NewPostHandler {
         }
     }
 }
+

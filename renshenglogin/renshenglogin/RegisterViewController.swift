@@ -8,7 +8,7 @@
 
 import UIKit
 import FirebaseAuth
-import Firebase
+import FirebaseCore
 
 class RegisterViewController: UIViewController {
 
@@ -27,6 +27,13 @@ class RegisterViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        userEmailTextField.resignFirstResponder()
+        userPasswordTextField.resignFirstResponder()
+        userRepeatPasswordTextField.resignFirstResponder()
+    }
+    
     
 
     @IBAction func registerButtonTapped(sender: Any) {

@@ -93,7 +93,7 @@ DEPENDENCIES:
   - MessageKit
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Bolts
     - FBSDKCoreKit
     - FBSDKLoginKit
@@ -135,4 +135,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 8859c247f6612b54acbca27ad2f5dd34c7e02b6a
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.0

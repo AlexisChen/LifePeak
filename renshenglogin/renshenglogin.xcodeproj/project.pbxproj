@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BFFAAAF210D749E00FAF105 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BFFAAAE210D749D00FAF105 /* GoogleService-Info.plist */; };
+		1BFFAAB1210D76F100FAF105 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFFAAB0210D76F100FAF105 /* NewPostViewController.swift */; };
+		1BFFAAB3210D789000FAF105 /* NewpostHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFFAAB2210D789000FAF105 /* NewpostHandler.swift */; };
 		433E7FDF2030BF19009B65A3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433E7FDE2030BF19009B65A3 /* SettingsViewController.swift */; };
 		433E7FE12030C9CE009B65A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433E7FE02030C9CE009B65A3 /* HomeViewController.swift */; };
 		434C0F0B201CF5ED00697E01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C0F0A201CF5ED00697E01 /* AppDelegate.swift */; };
@@ -21,17 +24,17 @@
 		43A41AD3201D9CC60040DDE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */; };
 		4B1A182E20FF0D6E0076A999 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A182D20FF0D6E0076A999 /* MainTabBarController.swift */; };
 		4B8661A6210AF2A400C55843 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8661A5210AF2A400C55843 /* Post.swift */; };
-		4BB338362100BE4B00D8358C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BB338352100BE4A00D8358C /* GoogleService-Info.plist */; };
 		4BEC303F2100D18800D0AC5D /* UploadtoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEC303E2100D18800D0AC5D /* UploadtoStorage.swift */; };
-		4BEC30412100D56E00D0AC5D /* NewPostHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEC30402100D56E00D0AC5D /* NewPostHandler.swift */; };
 		4BEC30432100D60100D0AC5D /* MediaSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEC30422100D60100D0AC5D /* MediaSelector.swift */; };
-		5A13B40120A9482C00AD2D28 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5A13B40020A9482C00AD2D28 /* Podfile */; };
 		5A13B40720A9634800AD2D28 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13B40620A9634800AD2D28 /* ChatViewController.swift */; };
 		5AE93ECA20AA3C37007E8178 /* Messagestruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE93EC920AA3C37007E8178 /* Messagestruct.swift */; };
 		F8E760D057CD884BC607C301 /* Pods_renshenglogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E711BF8A9D0CBB1A077090 /* Pods_renshenglogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BFFAAAE210D749D00FAF105 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1BFFAAB0210D76F100FAF105 /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		1BFFAAB2210D789000FAF105 /* NewpostHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewpostHandler.swift; sourceTree = "<group>"; };
 		433E7FDE2030BF19009B65A3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		433E7FE02030C9CE009B65A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		434C0F07201CF5ED00697E01 /* renshenglogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = renshenglogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,11 +52,8 @@
 		43CFC3722059D36B00BB5E7F /* renshenglogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = renshenglogin.entitlements; sourceTree = "<group>"; };
 		4B1A182D20FF0D6E0076A999 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		4B8661A5210AF2A400C55843 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		4BB338352100BE4A00D8358C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4BEC303E2100D18800D0AC5D /* UploadtoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadtoStorage.swift; sourceTree = "<group>"; };
-		4BEC30402100D56E00D0AC5D /* NewPostHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostHandler.swift; sourceTree = "<group>"; };
 		4BEC30422100D60100D0AC5D /* MediaSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSelector.swift; sourceTree = "<group>"; };
-		5A13B40020A9482C00AD2D28 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		5A13B40620A9634800AD2D28 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5AE93EC920AA3C37007E8178 /* Messagestruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messagestruct.swift; sourceTree = "<group>"; };
 		5C3B35C6A50D6C8CE4CF968B /* Pods-renshenglogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-renshenglogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-renshenglogin/Pods-renshenglogin.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,12 +94,17 @@
 		434C0F09201CF5ED00697E01 /* renshenglogin */ = {
 			isa = PBXGroup;
 			children = (
+				1BFFAAB2210D789000FAF105 /* NewpostHandler.swift */,
+				1BFFAAB0210D76F100FAF105 /* NewPostViewController.swift */,
+				1BFFAAAE210D749D00FAF105 /* GoogleService-Info.plist */,
 				4B78155C210463C700B9F9FF /* NewPostHandlers */,
-				4BB338352100BE4A00D8358C /* GoogleService-Info.plist */,
 				43CFC3722059D36B00BB5E7F /* renshenglogin.entitlements */,
 				434C0F1E201D053600697E01 /* RegisterViewController.swift */,
 				434C0F0A201CF5ED00697E01 /* AppDelegate.swift */,
 				434C0F0C201CF5ED00697E01 /* ViewController.swift */,
+				4B8661A5210AF2A400C55843 /* Post.swift */,
+				4BEC30422100D60100D0AC5D /* MediaSelector.swift */,
+				4BEC303E2100D18800D0AC5D /* UploadtoStorage.swift */,
 				434C0F0E201CF5ED00697E01 /* Main.storyboard */,
 				4B1A182D20FF0D6E0076A999 /* MainTabBarController.swift */,
 				434C0F11201CF5ED00697E01 /* Assets.xcassets */,
@@ -111,7 +116,6 @@
 				4359E17020621833009E20A0 /* CollectionViewController.swift */,
 				4359E17220621843009E20A0 /* MessageViewController1.swift */,
 				4359E17420621FBD009E20A0 /* FollowingViewController.swift */,
-				5A13B40020A9482C00AD2D28 /* Podfile */,
 				5A13B40620A9634800AD2D28 /* ChatViewController.swift */,
 				5AE93EC920AA3C37007E8178 /* Messagestruct.swift */,
 			);
@@ -121,10 +125,6 @@
 		4B78155C210463C700B9F9FF /* NewPostHandlers */ = {
 			isa = PBXGroup;
 			children = (
-				4BEC30422100D60100D0AC5D /* MediaSelector.swift */,
-				4BEC303E2100D18800D0AC5D /* UploadtoStorage.swift */,
-				4BEC30402100D56E00D0AC5D /* NewPostHandler.swift */,
-				4B8661A5210AF2A400C55843 /* Post.swift */,
 			);
 			path = NewPostHandlers;
 			sourceTree = "<group>";
@@ -214,9 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				434C0F12201CF5ED00697E01 /* Assets.xcassets in Resources */,
-				4BB338362100BE4B00D8358C /* GoogleService-Info.plist in Resources */,
-				5A13B40120A9482C00AD2D28 /* Podfile in Resources */,
 				434C0F10201CF5ED00697E01 /* Main.storyboard in Resources */,
+				1BFFAAAF210D749E00FAF105 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,8 +310,10 @@
 				4359E16F206216BC009E20A0 /* UserListViewController.swift in Sources */,
 				4B1A182E20FF0D6E0076A999 /* MainTabBarController.swift in Sources */,
 				4359E17320621843009E20A0 /* MessageViewController1.swift in Sources */,
+				1BFFAAB3210D789000FAF105 /* NewpostHandler.swift in Sources */,
 				43A41AD3201D9CC60040DDE7 /* LoginViewController.swift in Sources */,
 				4B8661A6210AF2A400C55843 /* Post.swift in Sources */,
+				1BFFAAB1210D76F100FAF105 /* NewPostViewController.swift in Sources */,
 				434C0F1F201D053600697E01 /* RegisterViewController.swift in Sources */,
 				434C0F0D201CF5ED00697E01 /* ViewController.swift in Sources */,
 				4359E17120621833009E20A0 /* CollectionViewController.swift in Sources */,
@@ -321,7 +322,6 @@
 				433E7FDF2030BF19009B65A3 /* SettingsViewController.swift in Sources */,
 				5AE93ECA20AA3C37007E8178 /* Messagestruct.swift in Sources */,
 				434C0F0B201CF5ED00697E01 /* AppDelegate.swift in Sources */,
-				4BEC30412100D56E00D0AC5D /* NewPostHandler.swift in Sources */,
 				433E7FE12030C9CE009B65A3 /* HomeViewController.swift in Sources */,
 				5A13B40720A9634800AD2D28 /* ChatViewController.swift in Sources */,
 				4BEC30432100D60100D0AC5D /* MediaSelector.swift in Sources */,
@@ -457,10 +457,10 @@
 				CODE_SIGN_ENTITLEMENTS = renshenglogin/renshenglogin.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 78TRN4D6D7;
+				DEVELOPMENT_TEAM = 2ZW99AD275;
 				INFOPLIST_FILE = renshenglogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.renshenglogin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.renshenglogin.usc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -476,10 +476,10 @@
 				CODE_SIGN_ENTITLEMENTS = renshenglogin/renshenglogin.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 78TRN4D6D7;
+				DEVELOPMENT_TEAM = 2ZW99AD275;
 				INFOPLIST_FILE = renshenglogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.renshenglogin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.renshenglogin.usc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

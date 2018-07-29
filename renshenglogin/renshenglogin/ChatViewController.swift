@@ -7,7 +7,7 @@
 //
 
 import FirebaseDatabase
-import Firebase
+import FirebaseCore
 import UIKit
 import MessageKit
 import MapKit

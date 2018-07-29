@@ -25,6 +25,11 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        userEmailTextField.resignFirstResponder()
+        userPasswordTextField.resignFirstResponder()
+    }
+    
     @IBAction func loginButtonTapped(_ sender: Any) {
         let userEmail = userEmailTextField.text;
         let userPassword = userPasswordTextField.text;

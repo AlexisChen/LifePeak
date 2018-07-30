@@ -14,7 +14,7 @@ import FirebaseAuth
 class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
 
-
+    @IBOutlet weak var addbutton: UIButton!
     @IBOutlet weak var postImageView: UIImageView!
     
     //let storageRef = Storage.storage().reference()
@@ -33,6 +33,10 @@ class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UI
     }
 
     @IBAction func getphoto(_ sender: Any) {
+         getpicture()
+    }
+    
+    func getpicture(){
         let Sheet = UIAlertController.init(title: nil, message: nil, preferredStyle: .actionSheet)
         
         weak var weakSelf = self
@@ -60,7 +64,6 @@ class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UI
         Sheet.addAction(cancelAction)
         
         self.present(Sheet, animated: true, completion: nil)
-        
     }
     
     func initPhotoPicker(){
@@ -70,6 +73,7 @@ class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UI
         photoPicker.sourceType = .photoLibrary
         self.present(photoPicker, animated: true, completion: nil)
     }
+    
     
     
     func initCameraPicker(){
@@ -88,8 +92,6 @@ class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UI
         
     }
     
-    
-    
      func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let image:UIImage = info[UIImagePickerControllerEditedImage] as! UIImage
@@ -99,7 +101,7 @@ class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UI
         }
         
         postImageView.image = image
-        
+        addbutton.isHidden = true;
         self.dismiss(animated: true, completion: nil)
     }
     

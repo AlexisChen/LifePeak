@@ -94,21 +94,20 @@
 		434C0F09201CF5ED00697E01 /* renshenglogin */ = {
 			isa = PBXGroup;
 			children = (
+				43CFC3722059D36B00BB5E7F /* renshenglogin.entitlements */,
+				1BFFAAAE210D749D00FAF105 /* GoogleService-Info.plist */,
+				434C0F16201CF5ED00697E01 /* Info.plist */,
+				434C0F0E201CF5ED00697E01 /* Main.storyboard */,
+				434C0F11201CF5ED00697E01 /* Assets.xcassets */,
 				1BFFAAB2210D789000FAF105 /* NewpostHandler.swift */,
 				1BFFAAB0210D76F100FAF105 /* NewPostViewController.swift */,
-				1BFFAAAE210D749D00FAF105 /* GoogleService-Info.plist */,
-				4B78155C210463C700B9F9FF /* NewPostHandlers */,
-				43CFC3722059D36B00BB5E7F /* renshenglogin.entitlements */,
 				434C0F1E201D053600697E01 /* RegisterViewController.swift */,
 				434C0F0A201CF5ED00697E01 /* AppDelegate.swift */,
 				434C0F0C201CF5ED00697E01 /* ViewController.swift */,
 				4B8661A5210AF2A400C55843 /* Post.swift */,
 				4BEC30422100D60100D0AC5D /* MediaSelector.swift */,
 				4BEC303E2100D18800D0AC5D /* UploadtoStorage.swift */,
-				434C0F0E201CF5ED00697E01 /* Main.storyboard */,
 				4B1A182D20FF0D6E0076A999 /* MainTabBarController.swift */,
-				434C0F11201CF5ED00697E01 /* Assets.xcassets */,
-				434C0F16201CF5ED00697E01 /* Info.plist */,
 				43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */,
 				433E7FDE2030BF19009B65A3 /* SettingsViewController.swift */,
 				433E7FE02030C9CE009B65A3 /* HomeViewController.swift */,
@@ -120,13 +119,6 @@
 				5AE93EC920AA3C37007E8178 /* Messagestruct.swift */,
 			);
 			path = renshenglogin;
-			sourceTree = "<group>";
-		};
-		4B78155C210463C700B9F9FF /* NewPostHandlers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NewPostHandlers;
 			sourceTree = "<group>";
 		};
 		B06C02BE074679C45E9D9FD5 /* Frameworks */ = {

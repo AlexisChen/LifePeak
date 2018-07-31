@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BC966232110BC47007DB000 /* Add_locationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC966222110BC47007DB000 /* Add_locationViewController.swift */; };
+		1BC966252110BC5E007DB000 /* Tag_friendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC966242110BC5E007DB000 /* Tag_friendsViewController.swift */; };
+		1BC966272110BC6F007DB000 /* Add_to_collectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC966262110BC6F007DB000 /* Add_to_collectionViewController.swift */; };
 		1BFFAAAF210D749E00FAF105 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BFFAAAE210D749D00FAF105 /* GoogleService-Info.plist */; };
 		1BFFAAB1210D76F100FAF105 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFFAAB0210D76F100FAF105 /* NewPostViewController.swift */; };
 		1BFFAAB3210D789000FAF105 /* NewpostHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFFAAB2210D789000FAF105 /* NewpostHandler.swift */; };
@@ -32,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BC966222110BC47007DB000 /* Add_locationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add_locationViewController.swift; sourceTree = "<group>"; };
+		1BC966242110BC5E007DB000 /* Tag_friendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag_friendsViewController.swift; sourceTree = "<group>"; };
+		1BC966262110BC6F007DB000 /* Add_to_collectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add_to_collectionViewController.swift; sourceTree = "<group>"; };
 		1BFFAAAE210D749D00FAF105 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1BFFAAB0210D76F100FAF105 /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		1BFFAAB2210D789000FAF105 /* NewpostHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewpostHandler.swift; sourceTree = "<group>"; };
@@ -98,6 +104,9 @@
 				1BFFAAAE210D749D00FAF105 /* GoogleService-Info.plist */,
 				434C0F16201CF5ED00697E01 /* Info.plist */,
 				434C0F0E201CF5ED00697E01 /* Main.storyboard */,
+				1BC966222110BC47007DB000 /* Add_locationViewController.swift */,
+				1BC966242110BC5E007DB000 /* Tag_friendsViewController.swift */,
+				1BC966262110BC6F007DB000 /* Add_to_collectionViewController.swift */,
 				434C0F11201CF5ED00697E01 /* Assets.xcassets */,
 				1BFFAAB2210D789000FAF105 /* NewpostHandler.swift */,
 				1BFFAAB0210D76F100FAF105 /* NewPostViewController.swift */,
@@ -302,11 +311,14 @@
 				4359E16F206216BC009E20A0 /* UserListViewController.swift in Sources */,
 				4B1A182E20FF0D6E0076A999 /* MainTabBarController.swift in Sources */,
 				4359E17320621843009E20A0 /* MessageViewController1.swift in Sources */,
+				1BC966232110BC47007DB000 /* Add_locationViewController.swift in Sources */,
 				1BFFAAB3210D789000FAF105 /* NewpostHandler.swift in Sources */,
 				43A41AD3201D9CC60040DDE7 /* LoginViewController.swift in Sources */,
 				4B8661A6210AF2A400C55843 /* Post.swift in Sources */,
+				1BC966252110BC5E007DB000 /* Tag_friendsViewController.swift in Sources */,
 				1BFFAAB1210D76F100FAF105 /* NewPostViewController.swift in Sources */,
 				434C0F1F201D053600697E01 /* RegisterViewController.swift in Sources */,
+				1BC966272110BC6F007DB000 /* Add_to_collectionViewController.swift in Sources */,
 				434C0F0D201CF5ED00697E01 /* ViewController.swift in Sources */,
 				4359E17120621833009E20A0 /* CollectionViewController.swift in Sources */,
 				4359E17520621FBD009E20A0 /* FollowingViewController.swift in Sources */,

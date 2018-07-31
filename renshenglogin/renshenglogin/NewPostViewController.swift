@@ -17,9 +17,11 @@ class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UI
     @IBOutlet weak var addbutton: UIButton!
     @IBOutlet weak var postImageView: UIImageView!
     
-    //let storageRef = Storage.storage().reference()
-    //@IBOutlet weak var titlecontent: UITextField!
-    //@IBOutlet weak var descriptioncontent: UITextView!
+    @IBOutlet weak var Add_Location: UIButton!
+    @IBOutlet weak var Tag_friends: UIButton!
+    @IBOutlet weak var add_to_collection: UIButton!
+    
+    @IBOutlet weak var content: UITextView!
     
     
     override func viewDidLoad() {
@@ -102,6 +104,7 @@ class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UI
         
         postImageView.image = image
         addbutton.isHidden = true;
+        
         self.dismiss(animated: true, completion: nil)
     }
     

@@ -27,6 +27,18 @@ class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UI
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        content.tintColor = UIColor.lightGray
+        
+        let tapSingle=UITapGestureRecognizer(target:self,
+                                             action:#selector(tapSingleDid))
+        tapSingle.numberOfTapsRequired = 1
+        self.postImageView.isUserInteractionEnabled = true
+        self.postImageView.addGestureRecognizer(tapSingle)
+    }
+    
+    @objc func tapSingleDid(_ ges:UITapGestureRecognizer){
+         getpicture()
     }
     
     override func didReceiveMemoryWarning() {
@@ -127,6 +139,8 @@ class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UI
     @IBAction func cancelpost(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    
     
     
     @IBAction func postTapped(_ sender: UIButton) {

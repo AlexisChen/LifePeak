@@ -23,9 +23,32 @@ class HomeViewController: UIViewController,UINavigationControllerDelegate,UIImag
         fileimg.layer.borderColor = UIColor.gray.cgColor
         fileimg.layer.borderWidth = 0.5
         
+        self.view.bringSubview(toFront: changebackground)
+        self.view.bringSubview(toFront: changefile)
+        
+        let tapSingleBackground=UITapGestureRecognizer(target:self,
+                                             action:#selector(backgroundTapSingleDid))
+        let tapSingleFile=UITapGestureRecognizer(target:self,
+                                                       action:#selector(fileTapSingleDid))
+        tapSingleBackground.numberOfTapsRequired = 1
+        tapSingleFile.numberOfTapsRequired = 1
+        self.backgroundimg.isUserInteractionEnabled = true
+        self.backgroundimg.addGestureRecognizer(tapSingleBackground)
+        self.fileimg.isUserInteractionEnabled = true
+        self.fileimg.addGestureRecognizer(tapSingleFile)
+        
         // Do any additional setup after loading the view.
     }
     
+    @objc func fileTapSingleDid(_ ges:UITapGestureRecognizer){
+        getpicture()
+        tappedbutton = 2
+    }
+
+    @objc func backgroundTapSingleDid(_ ges:UITapGestureRecognizer){
+        getpicture()
+        tappedbutton = 1
+    }
  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

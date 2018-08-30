@@ -36,13 +36,14 @@ class LoginViewController: UIViewController {
         //check if fields are filled:
         if(userEmail == "" || userPassword == ""){
             displayAlertMessage(usermessage: "UserEmail and UserPassword cannot be empty");
+            return
         }
         //when both fields are filled
         Auth.auth().signIn(withEmail: userEmail!, password: userPassword!, completion: {
             (user, error) in
             if(user != nil){
                 //sign in successful
-                
+                self.performSegue(withIdentifier: "LoginsuccessSegue", sender: nil)
             }else{
                 if let myError = error?.localizedDescription{
                     self.displayAlertMessage(usermessage: myError);
@@ -51,16 +52,6 @@ class LoginViewController: UIViewController {
                 }
             }
         })
-        /*
-        //using local storage
-        let userEmailStored = UserDefaults.standard.string(forKey: "userEmail");
-        let userPasswordStored = UserDefaults.standard.string(forKey: "userPassword");
-        if(userEmailStored == userEmail && userPasswordStored == userPassword){
-            UserDefaults.standard.set(true, forKey: "isUserLoggedIn");
-            UserDefaults.standard.synchronize();
-            self.dismiss(animated: true, completion: nil);
-        }
-         */
     }
     //alert window
     func displayAlertMessage(usermessage: String)

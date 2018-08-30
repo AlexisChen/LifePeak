@@ -70,7 +70,6 @@ class RegisterViewController: UIViewController {
                     switch AuthErrorCode(rawValue: error._code){
                     case .emailAlreadyInUse?:
                         self.displayAlertMessage(usermessage: "Email is already in use")
-                        print("in use")
                         break
                     case .invalidEmail?:
                         self.displayAlertMessage(usermessage: "Email format is invalid")
@@ -78,31 +77,18 @@ class RegisterViewController: UIViewController {
                     case .networkError?:
                         self.displayAlertMessage(usermessage: "Network error pls try again")
                         break
-                  
-                        
+                    case .weakPassword?:
+                        self.displayAlertMessage(usermessage: "Your Password is too weak")
+                        break
                     default:
-                       
+                        self.displayAlertMessage(usermessage: "UnKnown Error")
                         break
                       
                     }
-                   // self.displayAlertMessage(usermessage: myError);
-                }else{
-                    //self.displayAlertMessage(usermessage: "This account haven't registered, please register first");
                 }
             }
         }
         )
-        
-        /*
-         //using local storage
-        let defaults = UserDefaults.standard;
-        defaults.set(userEmail, forKey: "userEmail");
-        defaults.set(userPassword, forKey: "userPassword");
-        defaults.synchronize();
-        */
-        //display alert message with confirmation
-
-       
     }
     
     

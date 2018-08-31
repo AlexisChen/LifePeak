@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B79449F2138CD830038AFC7 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79449D2138CD830038AFC7 /* CollectionCell.swift */; };
+		1B7944A02138CD830038AFC7 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B79449E2138CD830038AFC7 /* CollectionCell.xib */; };
 		1BC966232110BC47007DB000 /* Add_locationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC966222110BC47007DB000 /* Add_locationViewController.swift */; };
 		1BC966252110BC5E007DB000 /* Tag_friendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC966242110BC5E007DB000 /* Tag_friendsViewController.swift */; };
 		1BC966272110BC6F007DB000 /* Add_to_collectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC966262110BC6F007DB000 /* Add_to_collectionViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B79449D2138CD830038AFC7 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		1B79449E2138CD830038AFC7 /* CollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
 		1BC966222110BC47007DB000 /* Add_locationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add_locationViewController.swift; sourceTree = "<group>"; };
 		1BC966242110BC5E007DB000 /* Tag_friendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag_friendsViewController.swift; sourceTree = "<group>"; };
 		1BC966262110BC6F007DB000 /* Add_to_collectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add_to_collectionViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				4359E17420621FBD009E20A0 /* FollowingViewController.swift */,
 				5A13B40620A9634800AD2D28 /* ChatViewController.swift */,
 				5AE93EC920AA3C37007E8178 /* Messagestruct.swift */,
+				1B79449D2138CD830038AFC7 /* CollectionCell.swift */,
+				1B79449E2138CD830038AFC7 /* CollectionCell.xib */,
 			);
 			path = renshenglogin;
 			sourceTree = "<group>";
@@ -217,6 +223,7 @@
 				434C0F12201CF5ED00697E01 /* Assets.xcassets in Resources */,
 				434C0F10201CF5ED00697E01 /* Main.storyboard in Resources */,
 				1BFFAAAF210D749E00FAF105 /* GoogleService-Info.plist in Resources */,
+				1B7944A02138CD830038AFC7 /* CollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +324,7 @@
 				4B8661A6210AF2A400C55843 /* Post.swift in Sources */,
 				1BC966252110BC5E007DB000 /* Tag_friendsViewController.swift in Sources */,
 				1BFFAAB1210D76F100FAF105 /* NewPostViewController.swift in Sources */,
+				1B79449F2138CD830038AFC7 /* CollectionCell.swift in Sources */,
 				434C0F1F201D053600697E01 /* RegisterViewController.swift in Sources */,
 				1BC966272110BC6F007DB000 /* Add_to_collectionViewController.swift in Sources */,
 				434C0F0D201CF5ED00697E01 /* ViewController.swift in Sources */,

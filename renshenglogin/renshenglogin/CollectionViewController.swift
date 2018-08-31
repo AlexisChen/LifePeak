@@ -8,12 +8,27 @@
 
 import UIKit
 
-class CollectionViewController: UIViewController {
+class CollectionViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "collectioncell", for: indexPath) as! CollectionCell
+        
+        return cell
+    }
+    
 
+    @IBOutlet weak var collectiontable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        collectiontable.delegate = self
+        collectiontable.dataSource = self
         // Do any additional setup after loading the view.
+        collectiontable.register(UINib(nibName: "CollectionCell", bundle: nil), forCellReuseIdentifier: "collectioncell")
     }
 
     override func didReceiveMemoryWarning() {

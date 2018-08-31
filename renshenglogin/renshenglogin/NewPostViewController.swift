@@ -12,8 +12,6 @@ import FirebaseDatabase
 import FirebaseAuth
 
 class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
-    
-
     @IBOutlet weak var addbutton: UIButton!
     @IBOutlet weak var postImageView: UIImageView!
     
@@ -23,7 +21,11 @@ class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UI
     
     @IBOutlet weak var content: UITextView!
     
+    var ref: DatabaseReference! = Database.database().reference()
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        content.resignFirstResponder()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -43,7 +45,6 @@ class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UI
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func getphoto(_ sender: Any) {
@@ -144,22 +145,30 @@ class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UI
     
     
     @IBAction func postTapped(_ sender: UIButton) {
-    
-//        if let uid = Auth.auth().currentUser?.uid{
-//            if let title = titleTextField.text {
-//                if let description = descriptionTextField.text{
-//                    let postObject: Dictionary<String, Any> = [
-//                        "uid" : uid,
-//                        "title" : title,
-//                        "description" : description
-//                    ]
-//                Database.database().reference().child("posts").childByAutoId().setValue(postObject)
-//                
-//                print("Posted to Firebase.")
-//                }
-//            }
-//        }
+        if let uid = Auth.auth().currentUser?.uid{
+            if let description = content.text{
+                if let postimage = postImageView.image{
+                    let imageData:NSData = UIImagePNGRepresentation(postimage)! as NSData
+                    let strBase64 = imageData.base64EncodedString(options: .lineLength64Characters)
+                    let postObject: Dictionary<String, Any> = [
+                        "picture" : strBase64,
+                        "description" : description
+                    ]
+                ref.child("posts").child(uid).childByAutoId().setValue(postObject)
+                displayAlertMessage(usermessage: "Post successfully");
+                self.performSegue(withIdentifier: "afterpost", sender: nil)
+                }
+        }
+        }
         
+    }
+    
+    func displayAlertMessage(usermessage: String)
+    {
+        let myAlert = UIAlertController(title: "Nice", message: usermessage, preferredStyle: UIAlertControllerStyle.alert);
+        let okAction = UIAlertAction(title:"ok", style: UIAlertActionStyle.default, handler:nil);
+        myAlert.addAction(okAction);
+        self.present(myAlert, animated: true, completion: nil);
     }
     
     

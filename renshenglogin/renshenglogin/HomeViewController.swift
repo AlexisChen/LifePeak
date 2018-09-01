@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate{
+class HomeViewController: BackgroundImageViewController, UINavigationControllerDelegate,UIImagePickerControllerDelegate{
 
     @IBOutlet weak var changebackground: UIButton!
     @IBOutlet weak var backgroundimg: UIImageView!

@@ -26,6 +26,7 @@
 		4359E17120621833009E20A0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17020621833009E20A0 /* CollectionViewController.swift */; };
 		4359E17320621843009E20A0 /* MessageViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17220621843009E20A0 /* MessageViewController1.swift */; };
 		4359E17520621FBD009E20A0 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17420621FBD009E20A0 /* FollowingViewController.swift */; };
+		438EDE1C213A6DF900241B08 /* BackgroundImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438EDE1B213A6DF900241B08 /* BackgroundImageViewController.swift */; };
 		43A41AD3201D9CC60040DDE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */; };
 		4B1A182E20FF0D6E0076A999 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A182D20FF0D6E0076A999 /* MainTabBarController.swift */; };
 		4B8661A6210AF2A400C55843 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8661A5210AF2A400C55843 /* Post.swift */; };
@@ -58,6 +59,7 @@
 		4359E17020621833009E20A0 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		4359E17220621843009E20A0 /* MessageViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController1.swift; sourceTree = "<group>"; };
 		4359E17420621FBD009E20A0 /* FollowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
+		438EDE1B213A6DF900241B08 /* BackgroundImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageViewController.swift; sourceTree = "<group>"; };
 		43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		43CFC3722059D36B00BB5E7F /* renshenglogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = renshenglogin.entitlements; sourceTree = "<group>"; };
 		4B1A182D20FF0D6E0076A999 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				5AE93EC920AA3C37007E8178 /* Messagestruct.swift */,
 				1B79449D2138CD830038AFC7 /* CollectionCell.swift */,
 				1B79449E2138CD830038AFC7 /* CollectionCell.xib */,
+				438EDE1B213A6DF900241B08 /* BackgroundImageViewController.swift */,
 			);
 			path = renshenglogin;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			files = (
 				4359E16F206216BC009E20A0 /* UserListViewController.swift in Sources */,
 				4B1A182E20FF0D6E0076A999 /* MainTabBarController.swift in Sources */,
+				438EDE1C213A6DF900241B08 /* BackgroundImageViewController.swift in Sources */,
 				4359E17320621843009E20A0 /* MessageViewController1.swift in Sources */,
 				1BC966232110BC47007DB000 /* Add_locationViewController.swift in Sources */,
 				1BFFAAB3210D789000FAF105 /* NewpostHandler.swift in Sources */,

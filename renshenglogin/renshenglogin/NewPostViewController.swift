@@ -11,7 +11,7 @@ import FirebaseCore
 import FirebaseDatabase
 import FirebaseAuth
 
-class NewPostViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class NewPostViewController: BackgroundImageViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     @IBOutlet weak var addbutton: UIButton!
     @IBOutlet weak var postImageView: UIImageView!
     

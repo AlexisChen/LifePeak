@@ -11,7 +11,7 @@ import FirebaseDatabase
 import FirebaseAuth
 import FirebaseCore
 
-class HomeViewController: UIViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate{
+class HomeViewController: BackgroundImageViewController, UINavigationControllerDelegate,UIImagePickerControllerDelegate{
 
     
     @IBOutlet weak var changebackground: UIButton!

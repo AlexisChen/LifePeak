@@ -11,6 +11,9 @@ import UIKit
 class CollectionCell: UITableViewCell {
     @IBOutlet weak var collectionimg: UIImageView!
     @IBOutlet weak var collectioncontent: UITextView!
+    @IBOutlet weak var username: UITextView!
+    @IBOutlet weak var userimg: UIImageView!
+    @IBOutlet weak var Bio: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

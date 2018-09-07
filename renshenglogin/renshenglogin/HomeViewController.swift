@@ -7,18 +7,32 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseAuth
+import FirebaseCore
 
 class HomeViewController: UIViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate{
 
+    
     @IBOutlet weak var changebackground: UIButton!
     @IBOutlet weak var backgroundimg: UIImageView!
     @IBOutlet weak var changefile: UIButton!
     @IBOutlet weak var fileimg: UIImageView!
+    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var bio: UILabel!
     
     var tappedbutton : Int = 0;
+    var ref: DatabaseReference! = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let uid = Auth.auth().currentUser?.uid{
+            ref.child("Users").child(uid).observeSingleEvent(of: DataEventType.value) { (snapshot) in
+                let value = snapshot.value as! NSDictionary
+                self.username.text = value["username"] as? String ?? ""
+                self.bio.text = value["bio"] as? String ?? ""
+            }
+        }
         backgroundimg.addSubview(fileimg)
         fileimg.layer.borderColor = UIColor.gray.cgColor
         fileimg.layer.borderWidth = 0.5

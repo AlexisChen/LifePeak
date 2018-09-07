@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
+import FirebaseCore
 
 class SettingsViewController: UIViewController {
-
+    
+    @IBOutlet weak var usernamecontent: UITextField!
+    @IBOutlet weak var bio: UITextView!
+    
+    var ref: DatabaseReference! = Database.database().reference()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,11 +36,25 @@ class SettingsViewController: UIViewController {
         self.dismiss(animated: true, completion: nil);
     }
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.usernamecontent.resignFirstResponder()
+        self.bio.resignFirstResponder()
+    }
+    
     @IBAction func okButtonTapped(_ sender: Any) {
         
         let confirmAlert = UIAlertController(title: "",  message: "Sure to save changes?",  preferredStyle: UIAlertControllerStyle.alert);
         let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default){action in
-            //probably perform some save function when ok is clicked.
+            if(self.usernamecontent.text == nil || self.bio.text == nil){}
+            else{
+            let userObject: Dictionary<String, Any> = [
+                "username" : self.usernamecontent.text!,
+                "bio" : self.bio.text
+            ]
+            if let uid = Auth.auth().currentUser?.uid{
+                self.ref.child("Users").child(uid).setValue(userObject)
+            }
+            }
             self.dismiss(animated: true, completion: nil);
         }
         let cancelAction = UIAlertAction(title:"cancel", style: UIAlertActionStyle.cancel){ (action:UIAlertAction!) in

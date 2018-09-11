@@ -11,6 +11,8 @@ import FirebaseAuth
 import FirebaseCore
 
 class RegisterViewController: UIViewController {
+    var prefilledEmail: String = ""
+    var prefilledPassword: String = ""
 
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
@@ -19,8 +21,8 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        userEmailTextField.text = prefilledEmail
+        userPasswordTextField.text = prefilledPassword
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,14 +57,25 @@ class RegisterViewController: UIViewController {
         }
         //store data
         Auth.auth().createUser(withEmail: userEmail!, password: userPassword!, completion: {(user, error) in
-            if (user != nil){
-                let confirmAlert = UIAlertController(title: "Thanks!",  message: "Registration is successful!",  preferredStyle: UIAlertControllerStyle.alert);
-                let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default){action in
-                    self.dismiss(animated: true, completion: nil);
-                }
-                confirmAlert.addAction(okAction);
-                self.present(confirmAlert, animated: true, completion: nil);
-
+            if user != nil {
+                Auth.auth().currentUser?.sendEmailVerification(completion: { (error) in
+                    if let error = error {
+                        print(error.localizedDescription)
+                        return
+                    }
+                    Auth.auth().currentUser?.sendEmailVerification { (error) in
+                            if let err = error {
+                                self.displayAlertMessage(usermessage: "Email Confirmation Sent Error!\n" + err.localizedDescription)
+                            } else {
+                                let confirmAlert = UIAlertController(title: "Thanks!",  message: "Registration is successful! \n An email confirmation has been sent to: \(Auth.auth().currentUser?.email! ?? "") \n Please confirma and log in",  preferredStyle: UIAlertControllerStyle.alert);
+                                let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default){action in
+                                    self.dismiss(animated: true, completion: nil);
+                                }
+                                confirmAlert.addAction(okAction);
+                                self.present(confirmAlert, animated: true, completion: nil);
+                            }
+                    }
+                })
             }
             
             else{
@@ -106,6 +119,7 @@ class RegisterViewController: UIViewController {
         myAlert.addAction(okAction);
         self.present(myAlert, animated: true, completion: nil);
     }
+    
     @IBAction func retryLoginTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil);
     }

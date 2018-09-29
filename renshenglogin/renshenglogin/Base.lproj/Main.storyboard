@@ -69,7 +69,8 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DeT-NG-O6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <scene sceneID="XNW-fQ-U3R">
+      <!-- 
+  <scene sceneID="XNW-fQ-U3R">
             <objects>
                     <view key="view" contentMode="scaleToFill" id="PbR-JA-lAg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -81,6 +82,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQi-fr-55E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+ -->
         <scene sceneID="fLl-GC-oIc">
             <objects>
                 <viewController id="w3R-NO-d2n" customClass="NewPostViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
@@ -258,7 +260,8 @@
             <point key="canvasLocation" x="3036" y="-688"/>
         </scene>
         <!--Main Tab Bar Controller-->
-        <scene sceneID="W2i-qb-ihg">
+        <!-- 
+<scene sceneID="W2i-qb-ihg">
             <objects>
                 <tabBarController id="Xfl-V0-efh" customClass="MainTabBarController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -272,6 +275,7 @@
             </objects>
             <point key="canvasLocation" x="449" y="1272"/>
         </scene>
+ -->
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -463,11 +467,8 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7u-R5-qNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="6233" y="2431"/>
-=======
-            <point key="canvasLocation" x="4688.8000000000002" y="3710.1949025487261"/>
->>>>>>> 53a1f8cfdcb34a01f7a7af7f97aa851247f391dc
+
         </scene>
         <scene sceneID="Yca-hW-SZ0">
             <objects>
@@ -947,7 +948,6 @@
             </objects>
             <point key="canvasLocation" x="449" y="-1208"/>
         </scene>
-<<<<<<< HEAD
         <!--Compose-->
         <scene sceneID="7SW-Ih-xTL">
             <objects>
@@ -967,8 +967,6 @@
             </objects>
             <point key="canvasLocation" x="733.60000000000002" y="3214.5427286356826"/>
         </scene>
-=======
->>>>>>> 53a1f8cfdcb34a01f7a7af7f97aa851247f391dc
     </scenes>
     <resources>
         <image name="Login" width="180" height="180"/>

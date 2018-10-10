@@ -30,33 +30,20 @@ class LoginViewController: UIViewController {
         userPasswordTextField.resignFirstResponder()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: nil)
-        if segue.destination is RegisterViewController {
-            let controller = segue.destination as? RegisterViewController
-            controller?.prefilledEmail = String(userEmailTextField.text!);
-            controller?.prefilledPassword = String(userPasswordTextField.text!);
-        }
-    }
-    
     @IBAction func loginButtonTapped(_ sender: Any) {
         let userEmail = userEmailTextField.text;
         let userPassword = userPasswordTextField.text;
         //check if fields are filled:
-        if userEmail == "" || userPassword == "" {
+        if(userEmail == "" || userPassword == ""){
             displayAlertMessage(usermessage: "UserEmail and UserPassword cannot be empty");
             return
         }
         //when both fields are filled
         Auth.auth().signIn(withEmail: userEmail!, password: userPassword!, completion: {
             (user, error) in
-            if user != nil {
-                if (Auth.auth().currentUser?.isEmailVerified)! {
-                    self.performSegue(withIdentifier: "LoginsuccessSegue", sender: nil)
-                } else {
-                    self.displayAlertMessage(usermessage: "Fuck! Told you to confirm!")
-                }
-                
+            if(user != nil){
+                //sign in successful
+                self.performSegue(withIdentifier: "LoginsuccessSegue", sender: nil)
             }else{
                 if let myError = error?.localizedDescription{
                     self.displayAlertMessage(usermessage: myError);

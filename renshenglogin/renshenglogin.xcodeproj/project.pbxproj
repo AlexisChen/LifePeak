@@ -22,6 +22,7 @@
 		434C0F10201CF5ED00697E01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434C0F0E201CF5ED00697E01 /* Main.storyboard */; };
 		434C0F12201CF5ED00697E01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434C0F11201CF5ED00697E01 /* Assets.xcassets */; };
 		434C0F1F201D053600697E01 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C0F1E201D053600697E01 /* RegisterViewController.swift */; };
+		434D200D216E697D00573710 /* BackgroundImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434D200C216E697D00573710 /* BackgroundImageViewController.swift */; };
 		4359E16F206216BC009E20A0 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E16E206216BC009E20A0 /* UserListViewController.swift */; };
 		4359E17120621833009E20A0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17020621833009E20A0 /* CollectionViewController.swift */; };
 		4359E17320621843009E20A0 /* MessageViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17220621843009E20A0 /* MessageViewController1.swift */; };
@@ -54,6 +55,7 @@
 		434C0F11201CF5ED00697E01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		434C0F16201CF5ED00697E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		434C0F1E201D053600697E01 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		434D200C216E697D00573710 /* BackgroundImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageViewController.swift; sourceTree = "<group>"; };
 		4359E16E206216BC009E20A0 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		4359E17020621833009E20A0 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		4359E17220621843009E20A0 /* MessageViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController1.swift; sourceTree = "<group>"; };
@@ -114,14 +116,15 @@
 				434C0F11201CF5ED00697E01 /* Assets.xcassets */,
 				1BFFAAB2210D789000FAF105 /* NewpostHandler.swift */,
 				1BFFAAB0210D76F100FAF105 /* NewPostViewController.swift */,
+				434D200C216E697D00573710 /* BackgroundImageViewController.swift */,
 				434C0F1E201D053600697E01 /* RegisterViewController.swift */,
+				43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */,
+				4B1A182D20FF0D6E0076A999 /* MainTabBarController.swift */,
 				434C0F0A201CF5ED00697E01 /* AppDelegate.swift */,
 				434C0F0C201CF5ED00697E01 /* ViewController.swift */,
 				4B8661A5210AF2A400C55843 /* Post.swift */,
 				4BEC30422100D60100D0AC5D /* MediaSelector.swift */,
 				4BEC303E2100D18800D0AC5D /* UploadtoStorage.swift */,
-				4B1A182D20FF0D6E0076A999 /* MainTabBarController.swift */,
-				43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */,
 				433E7FDE2030BF19009B65A3 /* SettingsViewController.swift */,
 				433E7FE02030C9CE009B65A3 /* HomeViewController.swift */,
 				4359E16E206216BC009E20A0 /* UserListViewController.swift */,
@@ -317,6 +320,7 @@
 			files = (
 				4359E16F206216BC009E20A0 /* UserListViewController.swift in Sources */,
 				4B1A182E20FF0D6E0076A999 /* MainTabBarController.swift in Sources */,
+				434D200D216E697D00573710 /* BackgroundImageViewController.swift in Sources */,
 				4359E17320621843009E20A0 /* MessageViewController1.swift in Sources */,
 				1BC966232110BC47007DB000 /* Add_locationViewController.swift in Sources */,
 				1BFFAAB3210D789000FAF105 /* NewpostHandler.swift in Sources */,

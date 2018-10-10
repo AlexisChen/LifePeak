@@ -11,7 +11,7 @@ import FirebaseDatabase
 import FirebaseAuth
 import FirebaseCore
 
-class HomeViewController: UIViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate{
+class HomeViewController: BackgroundImageViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate{
 
     
     @IBOutlet weak var changebackground: UIButton!
@@ -28,9 +28,10 @@ class HomeViewController: UIViewController,UINavigationControllerDelegate,UIImag
         super.viewDidLoad()
         if let uid = Auth.auth().currentUser?.uid{
             ref.child("Users").child(uid).observeSingleEvent(of: DataEventType.value) { (snapshot) in
-                let value = snapshot.value as! NSDictionary
-                self.username.text = value["username"] as? String ?? ""
-                self.bio.text = value["bio"] as? String ?? ""
+                if let value = snapshot.value as? NSDictionary{
+                    self.username.text = value["username"] as? String ?? ""
+                    self.bio.text = value["bio"] as? String ?? ""
+                }
             }
         }
         backgroundimg.addSubview(fileimg)

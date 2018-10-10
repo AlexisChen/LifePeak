@@ -16,16 +16,13 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var userPasswordTextField: UITextField!
     @IBOutlet weak var userRepeatPasswordTextField: UITextField!
     
+    var prefilledEmail: String = ""
+    var prefilledPassword: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        userEmailTextField.text = prefilledEmail
+        userPasswordTextField.text = prefilledPassword
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -55,14 +52,25 @@ class RegisterViewController: UIViewController {
         }
         //store data
         Auth.auth().createUser(withEmail: userEmail!, password: userPassword!, completion: {(user, error) in
-            if (user != nil){
-                let confirmAlert = UIAlertController(title: "Thanks!",  message: "Registration is successful!",  preferredStyle: UIAlertControllerStyle.alert);
-                let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default){action in
-                    self.dismiss(animated: true, completion: nil);
-                }
-                confirmAlert.addAction(okAction);
-                self.present(confirmAlert, animated: true, completion: nil);
-
+            if user != nil {
+                Auth.auth().currentUser?.sendEmailVerification(completion: { (error) in
+                    if let error = error {
+                        print(error.localizedDescription)
+                        return
+                    }
+                    Auth.auth().currentUser?.sendEmailVerification { (error) in
+                        if let err = error {
+                            self.displayAlertMessage(usermessage: "Email Confirmation Sent Error!\n" + err.localizedDescription)
+                        } else {
+                            let confirmAlert = UIAlertController(title: "Thanks!",  message: "Registration is successful! \n An email confirmation has been sent to: \(Auth.auth().currentUser?.email! ?? "") \n Please confirma and log in",  preferredStyle: UIAlertControllerStyle.alert);
+                            let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default){action in
+                                self.dismiss(animated: true, completion: nil);
+                            }
+                            confirmAlert.addAction(okAction);
+                            self.present(confirmAlert, animated: true, completion: nil);
+                        }
+                    }
+                })
             }
             
             else{
@@ -87,17 +95,14 @@ class RegisterViewController: UIViewController {
                     }
                 }
             }
-        }
-        )
+        })
     }
-    
     
     @IBAction func Clear(_ sender: Any) {
         userEmailTextField.text = "";
         userPasswordTextField.text = "";
         userRepeatPasswordTextField.text = "";
     }
-
     
     func displayAlertMessage(usermessage: String)
     {
@@ -109,14 +114,4 @@ class RegisterViewController: UIViewController {
     @IBAction func retryLoginTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil);
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

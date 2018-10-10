@@ -67,9 +67,9 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DeT-NG-O6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-879" y="1904"/>
+            <point key="canvasLocation" x="-3554" y="610"/>
         </scene>
-        <!--Explore-->
+        <!--View Controller-->
         <scene sceneID="XNW-fQ-U3R">
             <objects>
                 <viewController id="6gz-u4-qqs" sceneMemberID="viewController">
@@ -79,14 +79,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Lna-DQ-k7J"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Explore" id="Wia-R0-9bq"/>
+                    <tabBarItem key="tabBarItem" title="" image="Search" landscapeImage="Search" id="Wia-R0-9bq"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQi-fr-55E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="449" y="2703"/>
+            <point key="canvasLocation" x="-3201" y="2044"/>
         </scene>
-        <!--New post-->
+        <!--New Post View Controller-->
         <scene sceneID="fLl-GC-oIc">
             <objects>
                 <viewController id="w3R-NO-d2n" customClass="NewPostViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
@@ -174,7 +174,7 @@
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="SKH-j7-lxD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="New post" id="UEG-aG-QXn"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="" image="NewPost" landscapeImage="NewPost" id="UEG-aG-QXn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="Add_Location" destination="0RW-XH-kD3" id="6ct-5u-qzH"/>
@@ -188,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BqJ-pt-p66" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4689" y="1271"/>
+            <point key="canvasLocation" x="1388" y="3985"/>
         </scene>
         <!--Add location View Controller-->
         <scene sceneID="Z54-fS-pF3">
@@ -203,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G7U-fE-y2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5598" y="1271"/>
+            <point key="canvasLocation" x="2494" y="2990"/>
         </scene>
         <!--Tag friends View Controller-->
         <scene sceneID="Aut-ai-ygi">
@@ -218,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qS1-GV-Gh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6538" y="1271"/>
+            <point key="canvasLocation" x="2494" y="3741"/>
         </scene>
         <!--Add to collection View Controller-->
         <scene sceneID="6gx-on-Iyt">
@@ -233,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nch-2I-XEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7410" y="1271"/>
+            <point key="canvasLocation" x="2494" y="4417"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Ugz-ew-mM0">
@@ -281,8 +281,9 @@
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="qDt-zu-PIM" kind="relationship" relationship="viewControllers" id="aoW-c1-QTl"/>
                         <segue destination="6gz-u4-qqs" kind="relationship" relationship="viewControllers" id="7Q3-bf-AH1"/>
+                        <segue destination="krg-5M-B6N" kind="relationship" relationship="viewControllers" id="aNP-kR-dkm"/>
+                        <segue destination="qDt-zu-PIM" kind="relationship" relationship="viewControllers" id="aoW-c1-QTl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHg-QV-ZVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -480,9 +481,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7u-R5-qNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4688.8000000000002" y="3710.1949025487261"/>
+            <point key="canvasLocation" x="796" y="2045"/>
         </scene>
-        <!--Homepage-->
+        <!--Home View Controller-->
         <scene sceneID="Yca-hW-SZ0">
             <objects>
                 <viewController id="qDt-zu-PIM" customClass="HomeViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
@@ -598,16 +599,6 @@
                                 <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiG-0D-OIL">
-                                <rect key="frame" x="149" y="570" width="84" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="new">
-                                    <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="w3R-NO-d2n" kind="show" id="Kfj-WM-9e9"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0GR-HE-d4v">
                                 <rect key="frame" x="6" y="27" width="50" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -653,7 +644,7 @@
                         <color key="tintColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                         <viewLayoutGuide key="safeArea" id="mfr-va-Vqz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Homepage" id="lHk-7J-va7"/>
+                    <tabBarItem key="tabBarItem" title="" image="Homepage" landscapeImage="Homepage" id="lHk-7J-va7"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="backgroundimg" destination="ZhW-1c-jaN" id="krL-Sh-fNm"/>
@@ -666,7 +657,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFH-1d-brp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1588" y="1270.6146926536733"/>
+            <point key="canvasLocation" x="2938" y="1302"/>
         </scene>
         <!--Following View Controller-->
         <scene sceneID="JWt-6G-0wV">
@@ -698,7 +689,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mbg-hv-dwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4689" y="2918"/>
+            <point key="canvasLocation" x="3310" y="2905"/>
         </scene>
         <!--Follower View Controller-->
         <scene sceneID="nuA-iZ-I3z">
@@ -783,7 +774,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FnW-5U-KNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4688.8000000000002" y="2127.8860569715143"/>
+            <point key="canvasLocation" x="1684" y="2460"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="tws-r7-VZ2">
@@ -817,7 +808,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c95-j8-ocJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5461.6000000000004" y="2124.2878560719641"/>
+            <point key="canvasLocation" x="-138" y="4952"/>
         </scene>
         <!--Messages View Controller-->
         <scene sceneID="BEM-sk-nT4">
@@ -849,7 +840,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogi-5l-joo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3124" y="470"/>
+            <point key="canvasLocation" x="4622" y="551"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="rJY-Au-csD">
@@ -966,15 +957,36 @@
             </objects>
             <point key="canvasLocation" x="449" y="-1208"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="1bu-pI-y4O">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="krg-5M-B6N" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="uTp-Z4-WYS"/>
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pB0-jS-I8Y">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="w3R-NO-d2n" kind="relationship" relationship="viewControllers" id="bst-Ha-v1d"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rlN-WW-Iud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449" y="3985"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Homepage" width="41" height="53"/>
         <image name="Login" width="180" height="180"/>
         <image name="Logo" width="1920" height="1080"/>
+        <image name="NewPost" width="187" height="164"/>
+        <image name="Search" width="54" height="49"/>
         <image name="SignUp" width="180" height="180"/>
         <image name="setting" width="82" height="82"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MM0-B4-Xc3"/>
-        <segue reference="aoW-c1-QTl"/>
+        <segue reference="Z94-or-yVG"/>
+        <segue reference="Z8t-Od-ZlT"/>
     </inferredMetricsTieBreakers>
 </document>

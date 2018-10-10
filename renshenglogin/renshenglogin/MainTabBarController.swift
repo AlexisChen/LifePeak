@@ -21,7 +21,7 @@ class MainTabBarController: UITabBarController {
         })
         tabBar.tintColor = UIColor(red: 0.8, green: 0.75, blue: 0.95, alpha: 0.5)
         
-        //self.selectedViewController = self.viewControllers?[2]
+        self.selectedViewController = self.viewControllers?[2]
 
          postHandler.completionHandler = { image in
             //create the post for images

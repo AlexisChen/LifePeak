@@ -16,7 +16,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //prefill with my email and password
+        userEmailTextField.text! = "chenmingalexis@gmail.com"
+        userPasswordTextField.text! = "123456"
         // Do any additional setup after loading the view.
     }
 

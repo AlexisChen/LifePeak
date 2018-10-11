@@ -17,6 +17,7 @@ class SettingsViewController: BackgroundImageViewController, UITextFieldDelegate
     @IBOutlet weak var bioTextView: UITextView!
     
     var ref: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
@@ -80,15 +81,11 @@ class SettingsViewController: BackgroundImageViewController, UITextFieldDelegate
         
         let confirmAlert = UIAlertController(title: "",  message: "Sure to save changes?",  preferredStyle: UIAlertControllerStyle.alert);
         let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default){action in
-            if(self.usernameTextField.text == nil || self.bioTextView.text == nil){}
-            else{
-            let userObject: Dictionary<String, Any> = [
-                "username" : self.usernameTextField.text!,
-                "bio" : self.bioTextView.text
-            ]
-            if let uid = Auth.auth().currentUser?.uid{
-                self.ref.child("Users").child(uid).setValue(userObject)
-            }
+            if(!self.usernameTextField.text!.isEmpty && !self.bioTextView.text.isEmpty) {
+                if let uid = Auth.auth().currentUser?.uid{
+                    self.ref.child("Users").child(uid).updateChildValues(["username" : self.usernameTextField.text!])
+                    self.ref.child("Users").child(uid).updateChildValues(["bio" : self.bioTextView.text])
+                }
             }
             self.dismiss(animated: true, completion: nil);
         }

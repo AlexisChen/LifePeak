@@ -11,23 +11,63 @@ import FirebaseAuth
 import FirebaseDatabase
 import FirebaseCore
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: BackgroundImageViewController, UITextFieldDelegate, UITextViewDelegate {
     
-    @IBOutlet weak var usernamecontent: UITextField!
-    @IBOutlet weak var bio: UITextView!
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var bioTextView: UITextView!
     
-    var ref: DatabaseReference! = Database.database().reference()
+    var ref: DatabaseReference!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        ref = Database.database().reference()
+        if let uid = Auth.auth().currentUser?.uid {
+            ref.child("Users").child(uid).observeSingleEvent(of: .value) { (snapshot) in
+                if let userInfo = snapshot.value as? NSDictionary {
+                    self.usernameTextField.text = userInfo["username"] as? String ?? ""
+                    self.bioTextView.text = userInfo["bio"] as? String ?? ""
+                }
+            }
+        }
+        usernameTextField.delegate = self;
+        bioTextView.delegate = self;
     }
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.usernameTextField.resignFirstResponder()
+        self.bioTextView.resignFirstResponder()
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.backgroundColor = .white
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        finishEditingUsername()
+        return false;
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        finishEditingUsername()
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        textView.backgroundColor = .white
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        textView.backgroundColor = .clear
+        textView.resignFirstResponder()
+    }
+    
+    @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
+        if bioTextView.isFirstResponder {
+            bioTextView.resignFirstResponder()
+        }
+        if usernameTextField.isFirstResponder {
+            usernameTextField.resignFirstResponder()
+        }
+        
+    }
     
     @IBAction func logoutButtonTapped(_ sender: Any) {
         UserDefaults.standard.set(false, forKey: "isUserLoggedIn");
@@ -36,20 +76,15 @@ class SettingsViewController: UIViewController {
         self.dismiss(animated: true, completion: nil);
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.usernamecontent.resignFirstResponder()
-        self.bio.resignFirstResponder()
-    }
-    
     @IBAction func okButtonTapped(_ sender: Any) {
         
         let confirmAlert = UIAlertController(title: "",  message: "Sure to save changes?",  preferredStyle: UIAlertControllerStyle.alert);
         let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default){action in
-            if(self.usernamecontent.text == nil || self.bio.text == nil){}
+            if(self.usernameTextField.text == nil || self.bioTextView.text == nil){}
             else{
             let userObject: Dictionary<String, Any> = [
-                "username" : self.usernamecontent.text!,
-                "bio" : self.bio.text
+                "username" : self.usernameTextField.text!,
+                "bio" : self.bioTextView.text
             ]
             if let uid = Auth.auth().currentUser?.uid{
                 self.ref.child("Users").child(uid).setValue(userObject)
@@ -62,17 +97,11 @@ class SettingsViewController: UIViewController {
         confirmAlert.addAction(okAction);
         confirmAlert.addAction(cancelAction);
         self.present(confirmAlert, animated: true, completion: nil);
-        
-        
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func finishEditingUsername() {
+        usernameTextField.backgroundColor = .clear
+        usernameTextField.resignFirstResponder()
     }
-    */
 
 }

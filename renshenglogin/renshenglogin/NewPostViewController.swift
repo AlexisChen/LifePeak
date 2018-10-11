@@ -154,6 +154,7 @@ class NewPostViewController: BackgroundImageViewController,UIImagePickerControll
                         "picture" : strBase64,
                         "description" : description
                     ]
+                    
                 ref.child("posts").child(uid).childByAutoId().setValue(postObject)
                 displayAlertMessage(usermessage: "Post successfully");
                 self.performSegue(withIdentifier: "afterpost", sender: nil)

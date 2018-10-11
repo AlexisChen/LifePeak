@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mgl-6j-8rX">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <collectionViewController id="XoR-j4-XZN" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" springLoaded="YES" id="F32-Ef-clg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f1d-yV-vN5">
@@ -69,29 +69,95 @@
             </objects>
             <point key="canvasLocation" x="-3554" y="610"/>
         </scene>
-        <!--View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="XNW-fQ-U3R">
             <objects>
-                <viewController id="6gz-u4-qqs" sceneMemberID="viewController">
+                <viewController id="6gz-u4-qqs" customClass="SearchViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PbR-JA-lAg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="v3e-gR-C3j">
+                                <rect key="frame" x="27.666666666666657" y="144" width="320" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="1Wp-pX-oxc"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="npS-5Y-262">
+                                <rect key="frame" x="20" y="220" width="335" height="489"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="searchCell" rowHeight="300" id="GRk-gY-Ekf" customClass="PostCollectionTableViewCell" customModule="renshenglogin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GRk-gY-Ekf" id="iea-y1-sBw">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="299.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bJI-oC-VMc">
+                                                    <rect key="frame" x="47" y="0.0" width="240" height="189"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6D-Sa-3bl">
+                                                    <rect key="frame" x="47" y="197" width="240" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="postDescription" destination="j6D-Sa-3bl" id="tQU-fQ-Ueq"/>
+                                            <outlet property="postPicture" destination="bJI-oC-VMc" id="xAV-er-6p2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6gz-u4-qqs" id="BvB-jD-OON"/>
+                                    <outlet property="delegate" destination="6gz-u4-qqs" id="vWn-yF-4OO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="v3e-gR-C3j" firstAttribute="top" secondItem="Lna-DQ-k7J" secondAttribute="top" constant="100" id="N2y-9Z-3M1"/>
+                            <constraint firstItem="Lna-DQ-k7J" firstAttribute="bottom" secondItem="npS-5Y-262" secondAttribute="bottom" constant="20" id="Ubs-K8-z97"/>
+                            <constraint firstItem="npS-5Y-262" firstAttribute="top" secondItem="v3e-gR-C3j" secondAttribute="bottom" constant="20" id="W8b-Mo-flZ"/>
+                            <constraint firstItem="npS-5Y-262" firstAttribute="leading" secondItem="Lna-DQ-k7J" secondAttribute="leading" constant="20" id="XqF-Td-pxI"/>
+                            <constraint firstItem="v3e-gR-C3j" firstAttribute="centerX" secondItem="PbR-JA-lAg" secondAttribute="centerX" id="bc9-LK-QaX"/>
+                            <constraint firstItem="Lna-DQ-k7J" firstAttribute="trailing" secondItem="npS-5Y-262" secondAttribute="trailing" constant="20" id="oi9-TV-bHT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Lna-DQ-k7J"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="n5L-qo-ovO" appends="YES" id="UHw-GN-kpV"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Search" landscapeImage="Search" id="Wia-R0-9bq"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="v3e-gR-C3j" id="2ws-FN-Ian"/>
+                        <outlet property="searchResultTableView" destination="npS-5Y-262" id="J6x-Sw-qRS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQi-fr-55E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="n5L-qo-ovO">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="6gz-u4-qqs" id="5cw-Ho-qoz"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-3201" y="2044"/>
+            <point key="canvasLocation" x="-1122" y="1946"/>
         </scene>
         <!--New Post View Controller-->
         <scene sceneID="fLl-GC-oIc">
             <objects>
                 <viewController id="w3R-NO-d2n" customClass="NewPostViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6GH-VX-aLX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k7Y-nG-a6R">
@@ -195,7 +261,7 @@
             <objects>
                 <viewController id="Cpj-EY-d2b" customClass="Add_locationViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zjw-dJ-tza">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gsj-Pz-MQV"/>
@@ -210,7 +276,7 @@
             <objects>
                 <viewController id="42E-9b-aGq" customClass="Tag_friendsViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ob7-qz-eKE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XLu-St-8jH"/>
@@ -225,7 +291,7 @@
             <objects>
                 <viewController id="aRY-eL-cLS" customClass="Add_to_collectionViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RLl-u7-tSq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oBF-la-tc1"/>
@@ -240,7 +306,7 @@
             <objects>
                 <tableViewController id="wfi-T3-2pu" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ofK-0e-tV6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -248,7 +314,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="391"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kiy-cT-50l" id="4sk-qm-aqd">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="390.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="390.66666666666669"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OFE-Hj-qla">
@@ -295,7 +361,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOS-Zl-UOT">
@@ -322,17 +388,17 @@
             <objects>
                 <viewController id="Mgl-6j-8rX" customClass="LoginViewController" customModule="renshenglogin" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OIA-OK-BNN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ea9-ve-PWB">
-                                <rect key="frame" x="45" y="295" width="285" height="30"/>
+                                <rect key="frame" x="45" y="319" width="285" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqB-f7-M5c">
-                                <rect key="frame" x="45" y="391" width="120" height="120"/>
+                                <rect key="frame" x="45" y="415" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="RqB-f7-M5c" secondAttribute="height" multiplier="1:1" id="4yt-4B-iDi"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Yj0-Mf-WY8"/>
@@ -346,7 +412,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="DsU-Zc-TOg">
-                                <rect key="frame" x="84" y="106" width="207" height="129"/>
+                                <rect key="frame" x="84" y="130" width="207" height="129"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="207" id="V9u-cA-Z1n"/>
                                     <constraint firstAttribute="width" secondItem="DsU-Zc-TOg" secondAttribute="height" multiplier="69:43" id="vFC-Ya-C2L"/>
@@ -354,13 +420,13 @@
                                 <variation key="heightClass=regular-widthClass=regular" insetsLayoutMarginsFromSafeArea="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Eyv-Ue-PVm">
-                                <rect key="frame" x="45" y="333" width="285" height="30"/>
+                                <rect key="frame" x="45" y="357" width="285" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYN-Gg-WxS">
-                                <rect key="frame" x="210" y="391" width="120" height="120"/>
+                                <rect key="frame" x="210" y="415" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="BX2-az-ErW"/>
                                     <constraint firstAttribute="width" secondItem="KYN-Gg-WxS" secondAttribute="height" multiplier="1:1" id="Em5-wI-jOl"/>
@@ -412,7 +478,7 @@
             <objects>
                 <viewController id="tGo-o3-PM5" userLabel="Settings View Controller" customClass="SettingsViewController" customModule="renshenglogin" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R7C-Nd-0p9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuT-00-g6y">
@@ -488,7 +554,7 @@
             <objects>
                 <viewController id="qDt-zu-PIM" customClass="HomeViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zFu-xw-0CS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cmm-ls-CHY" userLabel="Icon">
@@ -664,7 +730,7 @@
             <objects>
                 <viewController id="L2X-FL-G0G" customClass="FollowingViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ytw-YN-geC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olB-9A-PxI">
@@ -696,7 +762,7 @@
             <objects>
                 <viewController id="o1h-u9-6xm" userLabel="Follower View Controller" customClass="UserListViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u6B-CT-vdd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsl-qr-XyE">
@@ -728,7 +794,7 @@
             <objects>
                 <viewController id="tUn-nl-SK0" userLabel="Collections View Controller" customClass="CollectionViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dnJ-Ez-bBc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6zR-dZ-Wp4">
@@ -758,7 +824,7 @@
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cGs-u1-VOc" id="OlA-GD-S9q">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -781,7 +847,7 @@
             <objects>
                 <collectionViewController id="Z3Q-ez-VJq" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Mje-8b-kWY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hHR-ii-FdE">
@@ -815,7 +881,7 @@
             <objects>
                 <viewController id="OjQ-h7-GAZ" userLabel="Messages View Controller" customClass="MessageViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CzZ-sT-pYy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdf-yg-BH7">
@@ -847,7 +913,7 @@
             <objects>
                 <viewController id="Tve-Ql-T9r" customClass="RegisterViewController" customModule="renshenglogin" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SCp-Zh-1ma">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUX-8a-ics">
@@ -872,7 +938,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnY-6A-4CY">
-                                <rect key="frame" x="21" y="497" width="333" height="30"/>
+                                <rect key="frame" x="21" y="608" width="333" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="333" id="Pqa-ir-hWo"/>
                                     <constraint firstAttribute="height" constant="30" id="aex-uY-dxB"/>
@@ -928,7 +994,7 @@
             <objects>
                 <viewController id="hr4-vG-6Jd" customClass="ChatViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RDH-sa-15p">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="msy-uu-O3x"/>
@@ -945,7 +1011,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zT6-HM-4lX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="phw-us-SN8">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -964,6 +1030,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="uTp-Z4-WYS"/>
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pB0-jS-I8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -978,15 +1045,15 @@
     </scenes>
     <resources>
         <image name="Homepage" width="41" height="53"/>
-        <image name="Login" width="180" height="180"/>
+        <image name="Login" width="270" height="270"/>
         <image name="Logo" width="1920" height="1080"/>
         <image name="NewPost" width="187" height="164"/>
         <image name="Search" width="54" height="49"/>
-        <image name="SignUp" width="180" height="180"/>
-        <image name="setting" width="82" height="82"/>
+        <image name="SignUp" width="270" height="270"/>
+        <image name="setting" width="123" height="123"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Z94-or-yVG"/>
-        <segue reference="Z8t-Od-ZlT"/>
+        <segue reference="aoW-c1-QTl"/>
     </inferredMetricsTieBreakers>
 </document>

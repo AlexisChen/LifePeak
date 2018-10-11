@@ -10,10 +10,6 @@ import Foundation
 import UIKit
 import FirebaseStorage
 import FirebaseDatabase
-import Foundation
-import UIKit
-import FirebaseStorage
-import FirebaseDatabase
 
 struct NewPostHandler {
     static func create(for image: UIImage) {

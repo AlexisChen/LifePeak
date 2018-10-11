@@ -28,7 +28,7 @@ class HomeViewController: BackgroundImageViewController,UINavigationControllerDe
         super.viewDidLoad()
         if let uid = Auth.auth().currentUser?.uid{
             ref.child("Users").child(uid).observeSingleEvent(of: DataEventType.value) { (snapshot) in
-                if let value = snapshot.value as? NSDictionary{
+                if let value = snapshot.value as? NSDictionary {
                     self.username.text = value["username"] as? String ?? ""
                     self.bio.text = value["bio"] as? String ?? ""
                 }

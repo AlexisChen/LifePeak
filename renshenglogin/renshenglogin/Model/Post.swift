@@ -22,7 +22,7 @@ class Post {
     let imageHeight: CGFloat
     let creationDate: Date
 
-    }
+}
 
 
 

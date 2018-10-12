@@ -27,6 +27,8 @@
 		4359E17120621833009E20A0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17020621833009E20A0 /* CollectionViewController.swift */; };
 		4359E17320621843009E20A0 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17220621843009E20A0 /* MessageViewController.swift */; };
 		4359E17520621FBD009E20A0 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359E17420621FBD009E20A0 /* FollowingViewController.swift */; };
+		4379B8F4217026B900A34B93 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379B8F3217026B900A34B93 /* FeedViewController.swift */; };
+		4379B8F82170308000A34B93 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379B8F72170308000A34B93 /* UserPost.swift */; };
 		43A41AD3201D9CC60040DDE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */; };
 		43DDA919216F081300F8D964 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDA918216F081300F8D964 /* SearchViewController.swift */; };
 		43DDA91B216F34F700F8D964 /* PostCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDA91A216F34F700F8D964 /* PostCollectionTableViewCell.swift */; };
@@ -62,6 +64,8 @@
 		4359E17020621833009E20A0 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		4359E17220621843009E20A0 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		4359E17420621FBD009E20A0 /* FollowingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
+		4379B8F3217026B900A34B93 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		4379B8F72170308000A34B93 /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
 		43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		43CFC3722059D36B00BB5E7F /* renshenglogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = renshenglogin.entitlements; sourceTree = "<group>"; };
 		43DDA918216F081300F8D964 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 		434C0F09201CF5ED00697E01 /* renshenglogin */ = {
 			isa = PBXGroup;
 			children = (
+				4379B8F62170304E00A34B93 /* View */,
+				4379B8F52170302300A34B93 /* Model */,
 				43CFC3722059D36B00BB5E7F /* renshenglogin.entitlements */,
 				1BFFAAAE210D749D00FAF105 /* GoogleService-Info.plist */,
 				434C0F16201CF5ED00697E01 /* Info.plist */,
@@ -121,14 +127,10 @@
 				1BFFAAB2210D789000FAF105 /* NewpostHandler.swift */,
 				4379B8F22170221100A34B93 /* ViewController */,
 				434C0F0A201CF5ED00697E01 /* AppDelegate.swift */,
-				434C0F0C201CF5ED00697E01 /* ViewController.swift */,
-				4B8661A5210AF2A400C55843 /* Post.swift */,
 				4BEC30422100D60100D0AC5D /* MediaSelector.swift */,
 				4BEC303E2100D18800D0AC5D /* UploadtoStorage.swift */,
-				5AE93EC920AA3C37007E8178 /* Messagestruct.swift */,
 				1B79449D2138CD830038AFC7 /* CollectionCell.swift */,
 				1B79449E2138CD830038AFC7 /* CollectionCell.xib */,
-				43DDA91A216F34F700F8D964 /* PostCollectionTableViewCell.swift */,
 			);
 			path = renshenglogin;
 			sourceTree = "<group>";
@@ -136,6 +138,7 @@
 		4379B8F22170221100A34B93 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				434C0F0C201CF5ED00697E01 /* ViewController.swift */,
 				433E7FDE2030BF19009B65A3 /* SettingsViewController.swift */,
 				433E7FE02030C9CE009B65A3 /* HomeViewController.swift */,
 				4359E16E206216BC009E20A0 /* UserListViewController.swift */,
@@ -149,8 +152,27 @@
 				43A41AD2201D9CC60040DDE7 /* LoginViewController.swift */,
 				4B1A182D20FF0D6E0076A999 /* MainTabBarController.swift */,
 				43DDA918216F081300F8D964 /* SearchViewController.swift */,
+				4379B8F3217026B900A34B93 /* FeedViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4379B8F52170302300A34B93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B8661A5210AF2A400C55843 /* Post.swift */,
+				5AE93EC920AA3C37007E8178 /* Messagestruct.swift */,
+				4379B8F72170308000A34B93 /* UserPost.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4379B8F62170304E00A34B93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43DDA91A216F34F700F8D964 /* PostCollectionTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B06C02BE074679C45E9D9FD5 /* Frameworks */ = {
@@ -346,6 +368,7 @@
 				1B79449F2138CD830038AFC7 /* CollectionCell.swift in Sources */,
 				434C0F1F201D053600697E01 /* RegisterViewController.swift in Sources */,
 				1BC966272110BC6F007DB000 /* Add_to_collectionViewController.swift in Sources */,
+				4379B8F82170308000A34B93 /* UserPost.swift in Sources */,
 				434C0F0D201CF5ED00697E01 /* ViewController.swift in Sources */,
 				4359E17120621833009E20A0 /* CollectionViewController.swift in Sources */,
 				4359E17520621FBD009E20A0 /* FollowingViewController.swift in Sources */,
@@ -356,6 +379,7 @@
 				434C0F0B201CF5ED00697E01 /* AppDelegate.swift in Sources */,
 				433E7FE12030C9CE009B65A3 /* HomeViewController.swift in Sources */,
 				5A13B40720A9634800AD2D28 /* ChatViewController.swift in Sources */,
+				4379B8F4217026B900A34B93 /* FeedViewController.swift in Sources */,
 				4BEC30432100D60100D0AC5D /* MediaSelector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,13 +15,13 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad () {
         super.viewDidLoad ()
         //set color schemes
-        tabBar.items?.forEach({ (tabBarItem) in
-            tabBarItem.image = tabBarItem.image?.withRenderingMode(.alwaysOriginal)
-            tabBarItem.title = nil
-        })
-        tabBar.tintColor = UIColor(red: 0.8, green: 0.75, blue: 0.95, alpha: 0.5)
-        
-        self.selectedViewController = self.viewControllers?[2]
+//        tabBar.items?.forEach({ (tabBarItem) in
+//            tabBarItem.image = tabBarItem.image?.withRenderingMode(.alwaysOriginal)
+//            tabBarItem.title = nil
+//        })
+//        tabBar.tintColor = UIColor(red: 0.8, green: 0.75, blue: 0.95, alpha: 0.5)
+//
+        self.selectedViewController = self.viewControllers?[4]
 
          postHandler.completionHandler = { image in
             //create the post for images
@@ -29,7 +29,7 @@ class MainTabBarController: UITabBarController {
         }
         
         delegate = self
-        tabBar.unselectedItemTintColor = .black
+//        tabBar.unselectedItemTintColor = .black
     }
 
     override func didReceiveMemoryWarning() {

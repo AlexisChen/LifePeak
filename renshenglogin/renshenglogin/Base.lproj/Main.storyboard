@@ -269,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G7U-fE-y2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2494" y="2990"/>
+            <point key="canvasLocation" x="3564" y="2554"/>
         </scene>
         <!--Tag friends View Controller-->
         <scene sceneID="Aut-ai-ygi">
@@ -284,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qS1-GV-Gh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2494" y="3741"/>
+            <point key="canvasLocation" x="3564" y="3242"/>
         </scene>
         <!--Add to collection View Controller-->
         <scene sceneID="6gx-on-Iyt">
@@ -299,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nch-2I-XEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2494" y="4417"/>
+            <point key="canvasLocation" x="3564" y="3918"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Ugz-ew-mM0">
@@ -335,6 +335,60 @@
             </objects>
             <point key="canvasLocation" x="3036" y="-688"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="BAm-Lg-J6O">
+            <objects>
+                <tableViewController id="ZAE-JU-54L" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eXO-Al-wp0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="289" id="VmI-ST-wZv">
+                                <rect key="frame" x="0.0" y="28" width="375" height="289"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VmI-ST-wZv" id="ku2-3S-jaX">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="288.66666666666669"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZAE-JU-54L" id="Hs5-TK-fkn"/>
+                            <outlet property="delegate" destination="ZAE-JU-54L" id="juD-JV-wfc"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="Feed" landscapeImage="Feed" id="TXD-Lk-7Rw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sef-ph-dpP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1719.2" y="2016.5024630541873"/>
+        </scene>
+        <!--Message View Controller-->
+        <scene sceneID="qfO-xy-6Ct">
+            <objects>
+                <viewController id="RO4-pH-kXQ" customClass="MessageViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bh9-Qc-3gc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNc-tt-i2V">
+                                <rect key="frame" x="94" y="297" width="171" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Lp6-2f-E0l"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Message" landscapeImage="Message" id="No6-dS-hGU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="toM-wL-N5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1223.2" y="1271.6748768472908"/>
+        </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="W2i-qb-ihg">
             <objects>
@@ -347,8 +401,10 @@
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="ZAE-JU-54L" kind="relationship" relationship="viewControllers" id="qmb-ru-ogV"/>
                         <segue destination="6gz-u4-qqs" kind="relationship" relationship="viewControllers" id="7Q3-bf-AH1"/>
                         <segue destination="krg-5M-B6N" kind="relationship" relationship="viewControllers" id="aNP-kR-dkm"/>
+                        <segue destination="RO4-pH-kXQ" kind="relationship" relationship="viewControllers" id="E3p-29-tHm"/>
                         <segue destination="qDt-zu-PIM" kind="relationship" relationship="viewControllers" id="aoW-c1-QTl"/>
                     </connections>
                 </tabBarController>
@@ -596,7 +652,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1237.5999999999999" y="1736.4532019704434"/>
+            <point key="canvasLocation" x="1238" y="1750"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Yca-hW-SZ0">
@@ -646,9 +702,6 @@
                                 <state key="normal" title="Messages">
                                     <color key="titleColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="OjQ-h7-GAZ" kind="presentation" id="prX-Vk-mrv"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZhW-1c-jaN" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="221"/>
@@ -714,24 +767,6 @@
                                 <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0GR-HE-d4v">
-                                <rect key="frame" x="6" y="27" width="50" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrz-QB-jt3">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
-                                        <state key="normal" title="Feed">
-                                            <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="backToFeedTapped:" destination="qDt-zu-PIM" eventType="touchUpInside" id="u7v-zz-1gv"/>
-                                        </connections>
-                                    </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vhW-GH-Ck7">
-                                        <rect key="frame" x="0.0" y="30" width="50" height="50"/>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szj-5Q-1Uw">
                                 <rect key="frame" x="159" y="178" width="66" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -750,9 +785,6 @@
                                 <state key="normal" title="Follower">
                                     <color key="titleColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="o1h-u9-6xm" kind="presentation" id="Ndf-87-LAy"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -804,39 +836,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mbg-hv-dwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4026" y="2130"/>
-        </scene>
-        <!--Follower View Controller-->
-        <scene sceneID="nuA-iZ-I3z">
-            <objects>
-                <viewController id="o1h-u9-6xm" userLabel="Follower View Controller" customClass="UserListViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="u6B-CT-vdd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsl-qr-XyE">
-                                <rect key="frame" x="128" y="584" width="138" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Home"/>
-                                <connections>
-                                    <action selector="FollowerHomeButtonClicked:" destination="o1h-u9-6xm" eventType="touchUpInside" id="r8G-2l-N0W"/>
-                                </connections>
-                            </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOH-ka-UAf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Followers" id="wqv-IT-p9x"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="gzz-mv-FPp"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NJk-rw-Mgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5249" y="2130"/>
+            <point key="canvasLocation" x="4249" y="1302"/>
         </scene>
         <!--Collections View Controller-->
         <scene sceneID="nHB-j2-HUe">
@@ -889,7 +889,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FnW-5U-KNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1238" y="2660"/>
+            <point key="canvasLocation" x="2308" y="2224"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="tws-r7-VZ2">
@@ -924,38 +924,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c95-j8-ocJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-138" y="4952"/>
-        </scene>
-        <!--Messages View Controller-->
-        <scene sceneID="BEM-sk-nT4">
-            <objects>
-                <viewController id="OjQ-h7-GAZ" userLabel="Messages View Controller" customClass="MessageViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CzZ-sT-pYy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdf-yg-BH7">
-                                <rect key="frame" x="118" y="71" width="138" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Home"/>
-                                <connections>
-                                    <action selector="HomeButtonClicked:" destination="OjQ-h7-GAZ" eventType="touchUpInside" id="rGH-se-wcT"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="fill" text="Messages" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="55S-VN-1lk">
-                                <rect key="frame" x="138" y="278" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Adi-At-ze9"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ogi-5l-joo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4622" y="551"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="rJY-Au-csD">
@@ -1093,9 +1061,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Feed" width="43" height="52"/>
         <image name="Homepage" width="41" height="53"/>
         <image name="Login" width="270" height="270"/>
         <image name="Logo" width="1920" height="1080"/>
+        <image name="Message" width="47" height="37"/>
         <image name="NewPost" width="187" height="164"/>
         <image name="Search" width="54" height="49"/>
         <image name="SignUp" width="270" height="270"/>
@@ -1103,6 +1073,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Z94-or-yVG"/>
-        <segue reference="FZT-Qd-irP"/>
+        <segue reference="Z8t-Od-ZlT"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -17,6 +17,8 @@
 		1BFFAAB3210D789000FAF105 /* NewpostHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFFAAB2210D789000FAF105 /* NewpostHandler.swift */; };
 		433E7FDF2030BF19009B65A3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433E7FDE2030BF19009B65A3 /* SettingsViewController.swift */; };
 		433E7FE12030C9CE009B65A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433E7FE02030C9CE009B65A3 /* HomeViewController.swift */; };
+		4346ECF9218006B900A0CEFC /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4346ECF8218006B900A0CEFC /* Explore.storyboard */; };
+		4346ECFB21800DB000A0CEFC /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4346ECFA21800DB000A0CEFC /* Feed.storyboard */; };
 		434C0F0B201CF5ED00697E01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C0F0A201CF5ED00697E01 /* AppDelegate.swift */; };
 		434C0F0D201CF5ED00697E01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C0F0C201CF5ED00697E01 /* ViewController.swift */; };
 		434C0F10201CF5ED00697E01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434C0F0E201CF5ED00697E01 /* Main.storyboard */; };
@@ -52,6 +54,8 @@
 		1BFFAAB2210D789000FAF105 /* NewpostHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewpostHandler.swift; sourceTree = "<group>"; };
 		433E7FDE2030BF19009B65A3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		433E7FE02030C9CE009B65A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4346ECF8218006B900A0CEFC /* Explore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
+		4346ECFA21800DB000A0CEFC /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		434C0F07201CF5ED00697E01 /* renshenglogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = renshenglogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		434C0F0A201CF5ED00697E01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		434C0F0C201CF5ED00697E01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +97,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4346ECF72180068C00A0CEFC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				434C0F0E201CF5ED00697E01 /* Main.storyboard */,
+				4346ECF8218006B900A0CEFC /* Explore.storyboard */,
+				4346ECFA21800DB000A0CEFC /* Feed.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		434C0EFE201CF5ED00697E01 = {
 			isa = PBXGroup;
 			children = (
@@ -114,12 +128,12 @@
 		434C0F09201CF5ED00697E01 /* renshenglogin */ = {
 			isa = PBXGroup;
 			children = (
+				4346ECF72180068C00A0CEFC /* Storyboards */,
 				4379B8F62170304E00A34B93 /* View */,
 				4379B8F52170302300A34B93 /* Model */,
 				43CFC3722059D36B00BB5E7F /* renshenglogin.entitlements */,
 				1BFFAAAE210D749D00FAF105 /* GoogleService-Info.plist */,
 				434C0F16201CF5ED00697E01 /* Info.plist */,
-				434C0F0E201CF5ED00697E01 /* Main.storyboard */,
 				1BC966222110BC47007DB000 /* Add_locationViewController.swift */,
 				1BC966242110BC5E007DB000 /* Tag_friendsViewController.swift */,
 				1BC966262110BC6F007DB000 /* Add_to_collectionViewController.swift */,
@@ -261,6 +275,8 @@
 			files = (
 				434C0F12201CF5ED00697E01 /* Assets.xcassets in Resources */,
 				434C0F10201CF5ED00697E01 /* Main.storyboard in Resources */,
+				4346ECFB21800DB000A0CEFC /* Feed.storyboard in Resources */,
+				4346ECF9218006B900A0CEFC /* Explore.storyboard in Resources */,
 				1BFFAAAF210D749E00FAF105 /* GoogleService-Info.plist in Resources */,
 				1B7944A02138CD830038AFC7 /* CollectionCell.xib in Resources */,
 			);

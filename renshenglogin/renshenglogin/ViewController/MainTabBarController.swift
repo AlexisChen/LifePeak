@@ -14,6 +14,7 @@ class MainTabBarController: UITabBarController {
     
     override func viewDidLoad () {
         super.viewDidLoad ()
+        
         //set color schemes
 //        tabBar.items?.forEach({ (tabBarItem) in
 //            tabBarItem.image = tabBarItem.image?.withRenderingMode(.alwaysOriginal)

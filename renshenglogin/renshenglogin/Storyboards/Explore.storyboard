@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SgA-Jd-vVc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="eKA-of-rrt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="yb9-dA-a2Y" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DkJ-hI-6NQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-821" y="2026"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="PXv-la-MCT">
+            <objects>
+                <viewController id="SgA-Jd-vVc" customClass="SearchViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6pO-1L-I3J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="8Pb-Xx-YmK">
+                                <rect key="frame" x="27.5" y="120" width="320" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="anS-Ff-xbi"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UBL-fx-dik">
+                                <rect key="frame" x="20" y="196" width="335" height="402"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="searchCell" rowHeight="300" id="qQh-dl-jZa" customClass="PostCollectionTableViewCell" customModule="renshenglogin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qQh-dl-jZa" id="KoX-Fe-kH3">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="299.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZTG-n7-cpL">
+                                                    <rect key="frame" x="47" y="0.0" width="240" height="189"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3a-9f-PqA">
+                                                    <rect key="frame" x="47" y="197" width="240" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="postDescription" destination="a3a-9f-PqA" id="T8m-Hf-Adt"/>
+                                            <outlet property="postPicture" destination="ZTG-n7-cpL" id="dgM-jf-uy4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="SgA-Jd-vVc" id="W3o-Tw-9ON"/>
+                                    <outlet property="delegate" destination="SgA-Jd-vVc" id="yZy-SX-zuR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="UBL-fx-dik" firstAttribute="top" secondItem="8Pb-Xx-YmK" secondAttribute="bottom" constant="20" id="4w7-W8-b75"/>
+                            <constraint firstItem="UBL-fx-dik" firstAttribute="leading" secondItem="8PD-c3-vbp" secondAttribute="leading" constant="20" id="7MO-JI-pXc"/>
+                            <constraint firstItem="8PD-c3-vbp" firstAttribute="bottom" secondItem="UBL-fx-dik" secondAttribute="bottom" constant="20" id="BlN-wF-eIA"/>
+                            <constraint firstItem="8Pb-Xx-YmK" firstAttribute="top" secondItem="8PD-c3-vbp" secondAttribute="top" constant="100" id="Yv7-9c-PCt"/>
+                            <constraint firstItem="8PD-c3-vbp" firstAttribute="trailing" secondItem="UBL-fx-dik" secondAttribute="trailing" constant="20" id="g3r-Vw-ChY"/>
+                            <constraint firstItem="8Pb-Xx-YmK" firstAttribute="centerX" secondItem="6pO-1L-I3J" secondAttribute="centerX" id="mf3-aA-bwg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8PD-c3-vbp"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="RrB-8Y-fXm" appends="YES" id="htl-QD-JLz"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Search" landscapeImage="Search" id="RAJ-Mp-5D6"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="8Pb-Xx-YmK" id="Zrn-3u-nbJ"/>
+                        <outlet property="searchResultTableView" destination="UBL-fx-dik" id="DYK-38-tL6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgN-lN-VNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RrB-8Y-fXm">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="SgA-Jd-vVc" id="GDR-6x-RRh"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-119" y="2158"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Search" width="54" height="49"/>
+    </resources>
+</document>

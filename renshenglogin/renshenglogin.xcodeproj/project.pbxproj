@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B65ABE02196711F00CA5AAF /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B65ABDF2196711F00CA5AAF /* Map.storyboard */; };
 		1B79449F2138CD830038AFC7 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79449D2138CD830038AFC7 /* CollectionCell.swift */; };
 		1B7944A02138CD830038AFC7 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B79449E2138CD830038AFC7 /* CollectionCell.xib */; };
 		1BC966232110BC47007DB000 /* Add_locationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC966222110BC47007DB000 /* Add_locationViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B65ABDF2196711F00CA5AAF /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		1B79449D2138CD830038AFC7 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		1B79449E2138CD830038AFC7 /* CollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
 		1BC966222110BC47007DB000 /* Add_locationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add_locationViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				4346ECF8218006B900A0CEFC /* Explore.storyboard */,
 				4346ECFA21800DB000A0CEFC /* Feed.storyboard */,
 				4346ECFC2180115200A0CEFC /* Compose.storyboard */,
+				1B65ABDF2196711F00CA5AAF /* Map.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				434C0F12201CF5ED00697E01 /* Assets.xcassets in Resources */,
 				434C0F10201CF5ED00697E01 /* Main.storyboard in Resources */,
 				4346ECFB21800DB000A0CEFC /* Feed.storyboard in Resources */,
+				1B65ABE02196711F00CA5AAF /* Map.storyboard in Resources */,
 				4346ECF9218006B900A0CEFC /* Explore.storyboard in Resources */,
 				1BFFAAAF210D749E00FAF105 /* GoogleService-Info.plist in Resources */,
 				4346ECFD2180115200A0CEFC /* Compose.storyboard in Resources */,

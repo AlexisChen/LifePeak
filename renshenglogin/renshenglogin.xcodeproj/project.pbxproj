@@ -19,6 +19,7 @@
 		433E7FE12030C9CE009B65A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433E7FE02030C9CE009B65A3 /* HomeViewController.swift */; };
 		4346ECF9218006B900A0CEFC /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4346ECF8218006B900A0CEFC /* Explore.storyboard */; };
 		4346ECFB21800DB000A0CEFC /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4346ECFA21800DB000A0CEFC /* Feed.storyboard */; };
+		4346ECFD2180115200A0CEFC /* Compose.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4346ECFC2180115200A0CEFC /* Compose.storyboard */; };
 		434C0F0B201CF5ED00697E01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C0F0A201CF5ED00697E01 /* AppDelegate.swift */; };
 		434C0F0D201CF5ED00697E01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434C0F0C201CF5ED00697E01 /* ViewController.swift */; };
 		434C0F10201CF5ED00697E01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434C0F0E201CF5ED00697E01 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		433E7FE02030C9CE009B65A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4346ECF8218006B900A0CEFC /* Explore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
 		4346ECFA21800DB000A0CEFC /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		4346ECFC2180115200A0CEFC /* Compose.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Compose.storyboard; sourceTree = "<group>"; };
 		434C0F07201CF5ED00697E01 /* renshenglogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = renshenglogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		434C0F0A201CF5ED00697E01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		434C0F0C201CF5ED00697E01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				434C0F0E201CF5ED00697E01 /* Main.storyboard */,
 				4346ECF8218006B900A0CEFC /* Explore.storyboard */,
 				4346ECFA21800DB000A0CEFC /* Feed.storyboard */,
+				4346ECFC2180115200A0CEFC /* Compose.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				4346ECFB21800DB000A0CEFC /* Feed.storyboard in Resources */,
 				4346ECF9218006B900A0CEFC /* Explore.storyboard in Resources */,
 				1BFFAAAF210D749E00FAF105 /* GoogleService-Info.plist in Resources */,
+				4346ECFD2180115200A0CEFC /* Compose.storyboard in Resources */,
 				1B7944A02138CD830038AFC7 /* CollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mgl-6j-8rX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mgl-6j-8rX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -68,89 +68,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DeT-NG-O6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2452" y="745"/>
-        </scene>
-        <!--Search View Controller-->
-        <scene sceneID="XNW-fQ-U3R">
-            <objects>
-                <viewController id="6gz-u4-qqs" customClass="SearchViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PbR-JA-lAg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="v3e-gR-C3j">
-                                <rect key="frame" x="27.5" y="120" width="320" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="1Wp-pX-oxc"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="npS-5Y-262">
-                                <rect key="frame" x="20" y="196" width="335" height="402"/>
-                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="searchCell" rowHeight="300" id="GRk-gY-Ekf" customClass="PostCollectionTableViewCell" customModule="renshenglogin" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="335" height="300"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GRk-gY-Ekf" id="iea-y1-sBw">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="299.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bJI-oC-VMc">
-                                                    <rect key="frame" x="47" y="0.0" width="240" height="189"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6D-Sa-3bl">
-                                                    <rect key="frame" x="47" y="197" width="240" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <outlet property="postDescription" destination="j6D-Sa-3bl" id="tQU-fQ-Ueq"/>
-                                            <outlet property="postPicture" destination="bJI-oC-VMc" id="xAV-er-6p2"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="6gz-u4-qqs" id="BvB-jD-OON"/>
-                                    <outlet property="delegate" destination="6gz-u4-qqs" id="vWn-yF-4OO"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="v3e-gR-C3j" firstAttribute="top" secondItem="Lna-DQ-k7J" secondAttribute="top" constant="100" id="N2y-9Z-3M1"/>
-                            <constraint firstItem="Lna-DQ-k7J" firstAttribute="bottom" secondItem="npS-5Y-262" secondAttribute="bottom" constant="20" id="Ubs-K8-z97"/>
-                            <constraint firstItem="npS-5Y-262" firstAttribute="top" secondItem="v3e-gR-C3j" secondAttribute="bottom" constant="20" id="W8b-Mo-flZ"/>
-                            <constraint firstItem="npS-5Y-262" firstAttribute="leading" secondItem="Lna-DQ-k7J" secondAttribute="leading" constant="20" id="XqF-Td-pxI"/>
-                            <constraint firstItem="v3e-gR-C3j" firstAttribute="centerX" secondItem="PbR-JA-lAg" secondAttribute="centerX" id="bc9-LK-QaX"/>
-                            <constraint firstItem="Lna-DQ-k7J" firstAttribute="trailing" secondItem="npS-5Y-262" secondAttribute="trailing" constant="20" id="oi9-TV-bHT"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Lna-DQ-k7J"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="n5L-qo-ovO" appends="YES" id="UHw-GN-kpV"/>
-                        </connections>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="Search" landscapeImage="Search" id="Wia-R0-9bq"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="searchBar" destination="v3e-gR-C3j" id="2ws-FN-Ian"/>
-                        <outlet property="searchResultTableView" destination="npS-5Y-262" id="J6x-Sw-qRS"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BQi-fr-55E" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="n5L-qo-ovO">
-                    <connections>
-                        <action selector="backgroundTapped:" destination="6gz-u4-qqs" id="5cw-Ho-qoz"/>
-                    </connections>
-                </tapGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="-26" y="2114"/>
         </scene>
         <!--New Post View Controller-->
         <scene sceneID="fLl-GC-oIc">
@@ -435,9 +352,9 @@
                     <connections>
                         <segue destination="BmX-OB-8H2" kind="relationship" relationship="viewControllers" id="dXB-ke-xIm"/>
                         <segue destination="hI0-o5-9uh" kind="relationship" relationship="viewControllers" id="ynL-KI-As0"/>
-                        <segue destination="krg-5M-B6N" kind="relationship" relationship="viewControllers" id="aNP-kR-dkm"/>
-                        <segue destination="RO4-pH-kXQ" kind="relationship" relationship="viewControllers" id="E3p-29-tHm"/>
+                        <segue destination="Wsu-Fu-7pW" kind="relationship" relationship="viewControllers" id="hM6-Kb-qY3"/>
                         <segue destination="qDt-zu-PIM" kind="relationship" relationship="viewControllers" id="aoW-c1-QTl"/>
+                        <segue destination="RO4-pH-kXQ" kind="relationship" relationship="viewControllers" id="E3p-29-tHm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHg-QV-ZVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1091,12 +1008,22 @@
             </objects>
             <point key="canvasLocation" x="449" y="2810"/>
         </scene>
+        <!--Compose-->
+        <scene sceneID="b4P-iI-Nix">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="compose" storyboardName="Compose" id="Wsu-Fu-7pW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="NewPost" id="UtM-BK-T7u"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2BB-GF-BYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449" y="1749"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Feed" width="43" height="52"/>
         <image name="Homepage" width="41" height="53"/>
         <image name="Login" width="180" height="180"/>
-        <image name="Logo" width="1920" height="1080"/>
+        <image name="Logo" width="460.79998779296875" height="259.20001220703125"/>
         <image name="Message" width="47" height="37"/>
         <image name="NewPost" width="187" height="164"/>
         <image name="Search" width="54" height="49"/>
@@ -1104,6 +1031,6 @@
         <image name="setting" width="82" height="82"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Z8t-Od-ZlT"/>
+        <segue reference="aoW-c1-QTl"/>
     </inferredMetricsTieBreakers>
 </document>

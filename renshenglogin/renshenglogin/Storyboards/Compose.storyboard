@@ -178,6 +178,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="NewPost" width="187" height="164"/>
+        <image name="NewPost" width="69" height="68"/>
     </resources>
 </document>

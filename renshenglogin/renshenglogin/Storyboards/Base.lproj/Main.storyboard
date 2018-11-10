@@ -353,8 +353,8 @@
                         <segue destination="BmX-OB-8H2" kind="relationship" relationship="viewControllers" id="dXB-ke-xIm"/>
                         <segue destination="hI0-o5-9uh" kind="relationship" relationship="viewControllers" id="ynL-KI-As0"/>
                         <segue destination="Wsu-Fu-7pW" kind="relationship" relationship="viewControllers" id="hM6-Kb-qY3"/>
-                        <segue destination="qDt-zu-PIM" kind="relationship" relationship="viewControllers" id="aoW-c1-QTl"/>
                         <segue destination="RO4-pH-kXQ" kind="relationship" relationship="viewControllers" id="E3p-29-tHm"/>
+                        <segue destination="qDt-zu-PIM" kind="relationship" relationship="viewControllers" id="aoW-c1-QTl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHg-QV-ZVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1020,13 +1020,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Feed" width="43" height="52"/>
-        <image name="Homepage" width="41" height="53"/>
+        <image name="Feed" width="23" height="27"/>
+        <image name="Homepage" width="22" height="28"/>
         <image name="Login" width="180" height="180"/>
         <image name="Logo" width="460.79998779296875" height="259.20001220703125"/>
-        <image name="Message" width="47" height="37"/>
-        <image name="NewPost" width="187" height="164"/>
-        <image name="Search" width="54" height="49"/>
+        <image name="Message" width="25" height="20"/>
+        <image name="NewPost" width="69" height="68"/>
+        <image name="Search" width="28" height="27"/>
         <image name="SignUp" width="180" height="180"/>
         <image name="setting" width="82" height="82"/>
     </resources>

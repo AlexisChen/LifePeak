@@ -69,154 +69,6 @@
             </objects>
             <point key="canvasLocation" x="-2452" y="745"/>
         </scene>
-        <!--New Post View Controller-->
-        <scene sceneID="fLl-GC-oIc">
-            <objects>
-                <viewController id="w3R-NO-d2n" customClass="NewPostViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6GH-VX-aLX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k7Y-nG-a6R">
-                                <rect key="frame" x="35" y="324" width="115" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRg-a8-sjM">
-                                <rect key="frame" x="16" y="32" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="cancelpost:" destination="w3R-NO-d2n" eventType="touchUpInside" id="b91-XP-1SX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgy-Dj-tp0">
-                                <rect key="frame" x="328" y="32" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Post">
-                                    <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="postTapped:" destination="w3R-NO-d2n" eventType="touchUpInside" id="ZRB-vh-5Ak"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RW-XH-kD3">
-                                <rect key="frame" x="0.0" y="473" width="375" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Location">
-                                    <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Cpj-EY-d2b" kind="show" id="Yuy-hK-Jp4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjX-l8-qvK">
-                                <rect key="frame" x="0.0" y="520" width="375" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tag Friends">
-                                    <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="42E-9b-aGq" kind="show" id="2Hs-fz-Xad"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GF3-Oc-BhZ">
-                                <rect key="frame" x="0.0" y="569" width="375" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add to Collection">
-                                    <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="aRY-eL-cLS" kind="show" id="X11-pf-aOa"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Yn6-p4-NPU">
-                                <rect key="frame" x="29" y="79" width="318" height="211"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ay-UM-WSZ">
-                                <rect key="frame" x="35" y="324" width="115" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <state key="normal" title="+">
-                                    <color key="titleColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="getphoto:" destination="w3R-NO-d2n" eventType="touchUpInside" id="VwS-Bz-DbA"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="SKH-j7-lxD"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="" image="NewPost" landscapeImage="NewPost" id="UEG-aG-QXn"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="Add_Location" destination="0RW-XH-kD3" id="6ct-5u-qzH"/>
-                        <outlet property="Tag_friends" destination="xjX-l8-qvK" id="JRk-F6-5J2"/>
-                        <outlet property="add_to_collection" destination="GF3-Oc-BhZ" id="ZrO-Qn-RBt"/>
-                        <outlet property="addbutton" destination="4Ay-UM-WSZ" id="Dh5-jM-kmf"/>
-                        <outlet property="content" destination="Yn6-p4-NPU" id="uH9-eb-nzt"/>
-                        <outlet property="postImageView" destination="k7Y-nG-a6R" id="moG-0F-N4b"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BqJ-pt-p66" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1388" y="2810"/>
-        </scene>
-        <!--Add location View Controller-->
-        <scene sceneID="Z54-fS-pF3">
-            <objects>
-                <viewController id="Cpj-EY-d2b" customClass="Add_locationViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Zjw-dJ-tza">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="gsj-Pz-MQV"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G7U-fE-y2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3564" y="2490"/>
-        </scene>
-        <!--Tag friends View Controller-->
-        <scene sceneID="Aut-ai-ygi">
-            <objects>
-                <viewController id="42E-9b-aGq" customClass="Tag_friendsViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ob7-qz-eKE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="XLu-St-8jH"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qS1-GV-Gh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3564" y="3242"/>
-        </scene>
-        <!--Add to collection View Controller-->
-        <scene sceneID="6gx-on-Iyt">
-            <objects>
-                <viewController id="aRY-eL-cLS" customClass="Add_to_collectionViewController" customModule="renshenglogin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RLl-u7-tSq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="oBF-la-tc1"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nch-2I-XEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3564" y="3918"/>
-        </scene>
         <!--Table View Controller-->
         <scene sceneID="Ugz-ew-mM0">
             <objects>
@@ -352,7 +204,7 @@
                     <connections>
                         <segue destination="BmX-OB-8H2" kind="relationship" relationship="viewControllers" id="dXB-ke-xIm"/>
                         <segue destination="hI0-o5-9uh" kind="relationship" relationship="viewControllers" id="ynL-KI-As0"/>
-                        <segue destination="Wsu-Fu-7pW" kind="relationship" relationship="viewControllers" id="hM6-Kb-qY3"/>
+                        <segue destination="Wsu-Fu-7pW" kind="relationship" relationship="viewControllers" id="cjI-IQ-lQ9"/>
                         <segue destination="RO4-pH-kXQ" kind="relationship" relationship="viewControllers" id="E3p-29-tHm"/>
                         <segue destination="qDt-zu-PIM" kind="relationship" relationship="viewControllers" id="aoW-c1-QTl"/>
                     </connections>
@@ -872,7 +724,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c95-j8-ocJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-138" y="4952"/>
+            <point key="canvasLocation" x="119" y="2532"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="rJY-Au-csD">
@@ -988,25 +840,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IhM-0q-QGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="449" y="-1208"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="1bu-pI-y4O">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="krg-5M-B6N" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="NewPost" id="uTp-Z4-WYS"/>
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pB0-jS-I8Y">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="w3R-NO-d2n" kind="relationship" relationship="viewControllers" id="bst-Ha-v1d"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rlN-WW-Iud" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="449" y="2810"/>
         </scene>
         <!--Compose-->
         <scene sceneID="b4P-iI-Nix">

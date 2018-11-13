@@ -20,5 +20,8 @@ target 'renshenglogin' do
 
 	#enable facebook login
     pod 'FBSDKLoginKit'
+    
+    #enable Mapbox
+    pod 'Mapbox-iOS-SDK', '~> 4.6'
 
 end

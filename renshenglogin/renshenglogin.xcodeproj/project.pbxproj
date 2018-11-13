@@ -38,12 +38,28 @@
 		43DDA91B216F34F700F8D964 /* PostCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDA91A216F34F700F8D964 /* PostCollectionTableViewCell.swift */; };
 		4B1A182E20FF0D6E0076A999 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A182D20FF0D6E0076A999 /* MainTabBarController.swift */; };
 		4B8661A6210AF2A400C55843 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8661A5210AF2A400C55843 /* Post.swift */; };
+		4B88D183219A9FC5008FFE9C /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B88D182219A9FC5008FFE9C /* Mapbox.framework */; };
+		4B88D184219A9FC5008FFE9C /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B88D182219A9FC5008FFE9C /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4BEC303F2100D18800D0AC5D /* UploadtoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEC303E2100D18800D0AC5D /* UploadtoStorage.swift */; };
 		4BEC30432100D60100D0AC5D /* MediaSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEC30422100D60100D0AC5D /* MediaSelector.swift */; };
 		5A13B40720A9634800AD2D28 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13B40620A9634800AD2D28 /* ChatViewController.swift */; };
 		5AE93ECA20AA3C37007E8178 /* Messagestruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE93EC920AA3C37007E8178 /* Messagestruct.swift */; };
 		F8E760D057CD884BC607C301 /* Pods_renshenglogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E711BF8A9D0CBB1A077090 /* Pods_renshenglogin.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B88D185219A9FC5008FFE9C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4B88D184219A9FC5008FFE9C /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1B65ABDF2196711F00CA5AAF /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
@@ -80,6 +96,7 @@
 		43DDA91A216F34F700F8D964 /* PostCollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionTableViewCell.swift; sourceTree = "<group>"; };
 		4B1A182D20FF0D6E0076A999 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		4B8661A5210AF2A400C55843 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4B88D182219A9FC5008FFE9C /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		4BEC303E2100D18800D0AC5D /* UploadtoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadtoStorage.swift; sourceTree = "<group>"; };
 		4BEC30422100D60100D0AC5D /* MediaSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSelector.swift; sourceTree = "<group>"; };
 		5A13B40620A9634800AD2D28 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8E760D057CD884BC607C301 /* Pods_renshenglogin.framework in Frameworks */,
+				4B88D183219A9FC5008FFE9C /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +134,7 @@
 		434C0EFE201CF5ED00697E01 = {
 			isa = PBXGroup;
 			children = (
+				4B88D182219A9FC5008FFE9C /* Mapbox.framework */,
 				434C0F09201CF5ED00697E01 /* renshenglogin */,
 				434C0F08201CF5ED00697E01 /* Products */,
 				F69895C252CF04DCC1B89827 /* Pods */,
@@ -225,6 +244,8 @@
 				434C0F05201CF5ED00697E01 /* Resources */,
 				0DB802251F3DB6BE553C6C19 /* [CP] Embed Pods Frameworks */,
 				50F198BDD6181E5CF04D099C /* [CP] Copy Pods Resources */,
+				4B88D185219A9FC5008FFE9C /* Embed Frameworks */,
+				4B88D186219A9FEE008FFE9C /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -344,6 +365,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-renshenglogin/Pods-renshenglogin-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		4B88D186219A9FEE008FFE9C /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework/strip-frameworks.sh\"\n";
 		};
 		50F198BDD6181E5CF04D099C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -538,6 +577,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ZW99AD275;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = renshenglogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.renshenglogin.usc;
@@ -557,6 +600,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ZW99AD275;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = renshenglogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobile.renshenglogin.usc;
